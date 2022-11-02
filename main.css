@@ -1,32 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body, html{
+    background-color: #e0e0e0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0;
+}
+/*MENU DE NAVEGACIÓN*/
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     overflow: hidden;
-    background-color: white;
-  }
-  
-  li {
-    float: left;
-  }
+    background-color: rgb(165, 42, 42);
+}
 
-  #der{
-    float:right;
-  }
-  
+li {
+  float: left;
+}
 
-  li a {
+#right{
+  float: right;
+}
+  
+li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
+
+li a:hover {
+    background-color: rgb(79, 21, 21);
+} 
   
-  .active {
-    background-color: red;
+/*IMAGEN BANNER*/
+.banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/salaclases.png");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative
+}
+
+.banner-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: solid;
+    border: 0px solid brown;
+    background-color: rgba(165, 42, 42, 0.39);
+    padding: 20px;
   }
 
-  li:hover{
+
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1, 1);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+  }
+  .one {
+    grid-column: 1;
+    grid-row: 1;
     background-color: red;
+    margin: 10px;
+    padding: 10px;
+  }
+  .two {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+  }
+  .three {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
   }
