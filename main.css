@@ -55,7 +55,7 @@ li a:hover {
   object-fit: contain;
   display: block;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 10px;
 }
 
 .texto-intro{
@@ -64,11 +64,13 @@ li a:hover {
   text-align: center;
   width: 700px;
   text-align: justify;
+  margin-left: 20px;
   margin-top: auto;
   margin-bottom: auto;
   padding-left: 10px;
   padding-right: 10px;
 }
+
 
 .columnas {
   display: grid;
@@ -103,4 +105,10 @@ li a:hover {
 
 #proyectos{
   margin-top: 100px;
+}
+
+
+
+@media only screen and (min-widht:700px){
+
 }
