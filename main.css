@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body, html{
-    background-color: #e0e0e0;
+    background-color: #000001;
     font-family: 'Roboto', sans-serif;
     height: 100%;
     margin: 0;
@@ -73,41 +73,27 @@ li a:hover {
 
 
 .columnas {
-  display: grid;
-  grid-template-columns: repeat(1, 1, 1);
+  display: flex;
+  justify-content: center;
   grid-gap: 20px;
-  grid-auto-rows: minmax(100px, auto);
+  margin-bottom: px;
+  padding: 40px;
 }
 
-.one {
-  grid-column: 1;
-  grid-row: 1;
-  background-color: red;
-  margin: 10px;
-  padding: 10px;
+.item {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #121212;
 }
 
-.two {
-  grid-column: 2;
-  grid-row: 1;
-  background-color: red;
-  margin: 10px;
-  padding: 10px;
-}
-
-.three {
-  grid-column: 3;
-  grid-row: 1;
-  background-color: red;
-  margin: 10px;
-  padding: 10px;
-}
 
 #proyectos{
   margin-top: 100px;
 }
 
-
+p,h1, h2 , h3{
+  color: white;
+}
 
 @media only screen and (min-widht:700px){
 
