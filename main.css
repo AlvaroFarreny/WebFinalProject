@@ -93,10 +93,11 @@ li a:hover {
 }
 
 #proyectos{
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 #sobreNosotros{
+  margin-top: 120px;
   background-color: #0b0c10;
   padding: 20px;
 }
@@ -106,6 +107,9 @@ li a:hover {
 }
 p,h1, h2 , h3{
   color: white;
+}
+a{
+  text-decoration: none;
 }
 
 @media only screen and (min-widht:700px){
