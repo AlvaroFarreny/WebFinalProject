@@ -1,69 +1,139 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 
 body, html{
-    background-color: #000001;
+    background-color: #f0f0f0;
     font-family: 'Roboto', sans-serif;
     height: 100%;
     margin: 0;
 }
 
+p,h1,h2, h3{
+  color: black;
+}
+
+.texto-criptoclub-inicio {
+  color: rgb(36, 36, 36);
+  font-size: 70px;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 77px;
+}
+
+.texto-descriptivo-inicio{ 
+  color: rgb(36, 36, 36);
+  font-size: 26px;
+  text-align: left;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 36px;
+}
+
 /*MENU DE NAVEGACIÓN*/
 ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    background-color: rgb(165, 42, 42);
+  list-style-type: none;
+  margin: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 li {
   float: left;
 }
 
-#right{
-  float: right;
-}
-  
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.titulos-h2{ 
+  color: rgb(165, 42, 42);
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  line-height: 64px;
 }
 
-li a:hover {
-    background-color: rgb(79, 21, 21);
-} 
+.header {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 40px;
+  font-size: 18px;
+  position: relative;
+  background-color: rgb(165, 42, 42);
+
+}
+
+.logoarribaizq {
+  color: transparent;
+  width: 190px;
+  height: 100px;
+  margin: 0 78px 0 0;
+  display: block;
+  position: relative;
+  background-size: contain;
+  background-image: url(img/logoizq.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.botones-izq-menu {
+  display: flex;
+  z-index: 5;
+  flex-grow: 1;
+  align-items:baseline;
+
+}
+
+.opciones {
+  align-self: baseline;
+  margin-left: 16px;
+  margin-right: auto;
+}
+
+.opcionmenu{  
+  position: relative;
+  margin-right: 32px;
+}
+
+.botones-der-menu {
+  display: flex;
+  align-items: flex-end;
+}
+
+.iniciarsesion-btn {
+  background-color: #fff;
+  display: block;
+  padding: 12px 15px 11px;
+  color: rgb(165, 42, 42);
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 10px;
+  position: relative;
+  border: 3px solid transparent;
+}
 /*FIN DEL MENÚ DE NAVEGACIÓN*/
 
-
 .banner{
-  height: 50%;
-}
-
-.grid-banner{
-  display: grid;
-  grid-template-columns: repeat(1, 1);
-  grid-auto-rows: minmax(100px, auto);
-  
+  display: flex;
+  justify-content: space-evenly;
+  height: 60%;
 }
 
 .foto{
-  grid-column: 1;
-  grid-row: 0;
-  object-fit: contain;
-  display: block;
-  margin-left: auto;
-  margin-right: 10px;
+  align-items: center;
+  margin: 0 -69px 0 95px;
+  height: 500px;
+  width: 500px
 }
 
-.texto-intro{
-  grid-column: 2;
-  grid-row: 0;
+.bloque-texto-intro{
   text-align: center;
   width: 700px;
-  text-align: justify;
   margin-left: 20px;
   margin-top: auto;
   margin-bottom: auto;
@@ -71,29 +141,25 @@ li a:hover {
   padding-right: 10px;
 }
 
-
 .columnas {
   display: flex;
-/*  justify-content: center;
-  grid-gap: 20px;
-  margin-bottom: 20px;
-  padding: 30px;*/
   justify-content: space-evenly;
   grid-gap: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  padding: 30px;
 }
 
 .item {
   flex-grow: 1;
   padding: 40px;
-  background-color: #121212;
+  background-color: rgb(250, 250, 255);
 }
 
 .item:hover {
  border-style: solid;
  border-radius: 1px;
- border-color: white;
+ border-color: black;
 }
 
 #proyectos{
@@ -101,17 +167,15 @@ li a:hover {
 }
 
 #sobreNosotros{
-  margin-top: 120px;
-  background-color: #0b0c10;
+  margin-top: 20px;
+  background-color: rgb(250, 250, 255);
   padding: 20px;
 }
 
 #contactanos{
   padding: 40px;
 }
-p,h1, h2 , h3{
-  color: white;
-}
+
 a{
   text-decoration: none;
 }
@@ -119,3 +183,4 @@ a{
 @media only screen and (min-widht:700px){
 
 }
+
