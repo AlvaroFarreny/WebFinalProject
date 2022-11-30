@@ -68,6 +68,12 @@ header{
     border: 2px solid black;
 }
 
+#selected:hover{    
+  background: linear-gradient(to right, #fe7676, #f54d4d);
+  color: black;
+  border: 2px solid black;
+}
+
 /*COVER*/
 .container__cover{
     width: 100%;
@@ -117,7 +123,6 @@ header{
     box-shadow: 1px 1px 30px -6px #f54d4d;
 }
 
-
 .container__cover .svg img{
     width: 600px;
     animation: move-vector 4s linear infinite;
@@ -139,9 +144,9 @@ header{
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
-    justify-content: flex-start;
-    margin-left: 20px;
-    margin-right: 20px;
+    justify-content: flex-start; 
+    margin: 0 140px 0 140px
+    
   }
   
   .item {
@@ -149,7 +154,7 @@ header{
     flex-flow: row nowrap;
     align-items: stretch;
     justify-content: flex-start;
-    margin: 60px 30px 60px 20px;
+    margin: 0x 30px 0 20px;
   }
 
   .partetext{
@@ -184,8 +189,8 @@ header{
   .columnas-nosotros {
     display: flex;
     justify-content:space-evenly;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 140px;
+    margin-right: 140px;
   }
   
   .item-nosotros {
