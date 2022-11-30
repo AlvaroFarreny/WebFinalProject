@@ -24,7 +24,46 @@
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#proyectos">Proyectos</a></li>
                         <li><a href="#">Nosotros</a></li>
-                        <li><a href="#" id="selected">Login</a></li>
+                        <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="selected" >Login</button>
+                            <div id="id01" class="modal">
+                                <form class="modal-content animate" action="/action_page.php" method="post">
+                                    <div class="imgcontainer">
+                                        <span onclick="document.getElementById('id01').style.display='none'"
+                                            class="close" title="Close Modal">&times;</span>
+                                    </div>
+                                    <div class="container">
+                                        <label for="uname"><b>Username</b></label>
+                                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                        <button type="submit">Login</button>
+                                        <label>
+                                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                                        </label>
+                                    </div>
+
+                                    <div class="container" style="background-color:#f1f1f1">
+                                        <button type="button"
+                                            onclick="document.getElementById('id01').style.display='none'"
+                                            class="cancelbtn">Cancel</button>
+                                        <span class="psw">Forgot <a href="#">password?</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                            <script>
+                                // Get the modal
+                                var modal = document.getElementById('id01');
+
+                                // When the user clicks anywhere outside of the modal, close it
+                                window.onclick = function (event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            </script>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -36,7 +75,8 @@
             <div class="text">
                 <h1>Bienvenidos al CriptoClub</h1>
                 <p>Queremos explorar el potencial que tiene la tecnología del <strong>blockchain</strong> y la
-                    <strong>descentralización</strong> para cambiar la economía tal y como la conocemos.</p>
+                    <strong>descentralización</strong> para cambiar la economía tal y como la conocemos.
+                </p>
                 <input type="button" value="Registrarme">
             </div>
             <div class="svg">
@@ -80,39 +120,57 @@
     <section id="proyectos">
         <h2 class="titulos-h2">Proyectos del Club</h2>
         <div class="columnas">
-                <div class="item">
-                    <div class="partetext">
-                        <h3 class="minitexto">Aprendizaje autónomo</h3>
-                        <h2 class="item-h2">Bit2me x UEM</h2>
-                        <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            <input type="button" value="Conocer mas">
-                        </div>
-                        <div class="parteimagen">
-                            <img src="img/bit2me.png" loading="lazy"> 
-                        </div>
+            <div class="item">
+                <div class="partetext">
+                    <h3 class="minitexto">Aprendizaje autónomo</h3>
+                    <h2 class="item-h2">Bit2me x UEM</h2>
+                    <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        only five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                        Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem Ipsum.</p>
+                    <input type="button" value="Conocer mas">
                 </div>
-                <div class="item">
-                    <div class="parteimagen">
-                        <img src="img/bit2me.png" loading="lazy">
-                    </div>
-                    <div class="partetext">
-                        <h3 class="minitexto">Liga Universitaria</h3>
-                        <h2 class="item-h2">Liga de Bolsa</h2>
-                        <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            <input type="button" value="Conocer mas">
-                        </div>
+                <div class="parteimagen">
+                    <img src="img/bit2me.png" loading="lazy">
                 </div>
-                <div class="item">
-                    <div class="partetext">
-                        <h3 class="minitexto">Creación de NFTs</h3>
-                        <h2 class="item-h2">Fundación Antonio Camaró</h2>
-                        <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                            <input type="button" value="Conocer mas">
-                        </div>
-                        <div class="parteimagen">
-                            <img src="img/bit2me.png" loading="lazy">
-                        </div>
+            </div>
+            <div class="item">
+                <div class="parteimagen">
+                    <img src="img/bit2me.png" loading="lazy">
                 </div>
+                <div class="partetext">
+                    <h3 class="minitexto">Liga Universitaria</h3>
+                    <h2 class="item-h2">Liga de Bolsa</h2>
+                    <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        only five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                        Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem Ipsum.</p>
+                    <input type="button" value="Conocer mas">
+                </div>
+            </div>
+            <div class="item">
+                <div class="partetext">
+                    <h3 class="minitexto">Creación de NFTs</h3>
+                    <h2 class="item-h2">Fundación Antonio Camaró</h2>
+                    <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        only five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
+                        Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                        including versions of Lorem Ipsum.</p>
+                    <input type="button" value="Conocer mas">
+                </div>
+                <div class="parteimagen">
+                    <img src="img/bit2me.png" loading="lazy">
+                </div>
+            </div>
         </div>
     </section>
     <section id="contactanos">
@@ -136,7 +194,7 @@
         </div>
     </section>
     <footer>
-        <img src="img/uem-logo.png" height="100px" width="350px" loading="lazy"> 
+        <img src="img/uem-logo.png" height="100px" width="350px" loading="lazy">
     </footer>
 </body>
 
