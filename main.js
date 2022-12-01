@@ -83,10 +83,13 @@ const showUserDashboard = async () => {
     document.title = "Web3 Login";
 
     // show the login section
-    document.querySelector(".login-section").style.display = "flex";
+    document.querySelector(".login-section").style.display = "block";
 
     // hide the user dashboard section
     document.querySelector(".dashboard-section").style.display = "none";
+
+    //ESCONDEMOS EL MENU DE LOGIN
+    document.querySelector(".container").style.display = "block";
 
     // return from the function
     return false;
@@ -100,6 +103,9 @@ const showUserDashboard = async () => {
 
   // show the dashboard section
   document.querySelector(".dashboard-section").style.display = "flex";
+
+  //ESCONDEMOS EL MENU DE LOGIN
+  document.querySelector(".container").style.display = "none";
 
   // show the user's wallet address
   

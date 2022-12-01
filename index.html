@@ -8,15 +8,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
+    <script src="https://kit.fontawesome.com/e4d9b954f0.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/favicon-32x32.png">
-
-    <!-- Web3.js LIBRARY -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1/web3.min.js"
-      integrity="sha512-GKw4QT/RccGJIwQxY3MhyiQ5pHrhQ8SuKFEafV+WcpOvtz7iYFQuQGFCvmGlHLctJTe8KrWU1FqvF7VOkEAJtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
 </head>
 
 <body>
@@ -31,54 +24,12 @@
                         <li><a href="#">Inicio</a></li>
                         <li><a href="#proyectos">Proyectos</a></li>
                         <li><a href="#">Nosotros</a></li>
-                        <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"
-                                id="buttonlogin">Login</button>
-                            <div id="id01" class="modal">
-                                <form class="modal-content animate" action="/action_page.php" method="post">
-                                    <div class="imgcontainer">
-                                        <span onclick="document.getElementById('id01').style.display='none'"
-                                            class="close" title="Close Modal">&times;</span>
-                                    </div>
-                                    <div class="container">
-                                        <label for="uname"><b>Username</b></label>
-                                        <input type="text" placeholder="Enter Username" name="uname" required>
-
-                                        <label for="psw"><b>Password</b></label>
-                                        <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                        <button type="submit">Login</button>
-                                        <label>
-                                            <input type="checkbox" checked="checked" name="remember"> Remember me
-                                        </label>
-                                    </div>
-                                    
-                                </form>
-                                <section class="login-section">
-                                    <p class="centrar-p">Or</p>
-                                    <button class="login-btn">🔓 Log in with Web3</button>
-                                    <span class="instruction">
-                                      Ensure to have an Ethereum based wallet installed i.e MetaMask
-                                    </span>
-                                </section>
-                            </div>
-                            <script>
-                                // Get the modal
-                                var modal = document.getElementById('id01');
-
-                                // When the user clicks anywhere outside of the modal, close it
-                                window.onclick = function (event) {
-                                    if (event.target == modal) {
-                                        modal.style.display = "none";
-                                    }
-                                }
-                            </script>
-                        </li>
+                        <li><a href="/login.html" id="buttonlogin">Login</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
     <div class="container__cover">
         <div class="cover">
             <div class="text">
