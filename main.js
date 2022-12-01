@@ -119,10 +119,5 @@ const showUserDashboard = async () => {
 
   // get the user's wallet balance
    getWalletBalance();
-
-   
 };
 
-
-
-  
