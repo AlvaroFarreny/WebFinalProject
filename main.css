@@ -66,6 +66,11 @@ header {
   letter-spacing: 1.4px;
 }
 
+.perfil{
+  color:transparent;
+  display: none;
+}
+
 #buttonlogin {
   margin: -10px 0 0 5px;
   padding: 10px 40px;
@@ -230,6 +235,7 @@ header {
 }
 
 #contactanos {
+  margin-top: 20px;
   padding: 40px;
   display: flex;
   align-items: center;

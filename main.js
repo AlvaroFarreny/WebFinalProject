@@ -91,6 +91,9 @@ const showUserDashboard = async () => {
     //ESCONDEMOS EL MENU DE LOGIN
     document.querySelector(".container").style.display = "block";
 
+    //MOSTRAMOS AVATAR
+    document.querySelector(".perfil").style.display = "none";
+
     // return from the function
     return false;
   }
@@ -106,6 +109,9 @@ const showUserDashboard = async () => {
 
   //ESCONDEMOS EL MENU DE LOGIN
   document.querySelector(".container").style.display = "none";
+
+  //MOSTRAMOS AVATAR
+  document.querySelector(".perfil").style.display = "block";
 
   // show the user's wallet address
   
