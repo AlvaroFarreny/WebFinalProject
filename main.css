@@ -160,7 +160,7 @@ header {
   flex-flow: column nowrap;
   align-items: stretch;
   justify-content: flex-start;
-  margin: 0 140px 0 140px
+  margin: 0 140px 0 140px;
 }
 
 .item {
@@ -466,6 +466,11 @@ span.psw {
   }
 }
 
-#bit2me{
-  background-color: rgb(243, 243, 244);
+.dark-mode {
+  background-color: #121212;
+  
+}
+
+.texto-blanco * {
+  color: white;
 }
