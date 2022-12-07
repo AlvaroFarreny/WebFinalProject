@@ -126,3 +126,4 @@ function darkmode() {
   element.classList.toggle("dark-mode");
   element.classList.toggle("texto-blanco");
 };
+

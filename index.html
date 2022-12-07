@@ -38,7 +38,7 @@
                 <p>Queremos explorar el potencial que tiene la tecnología del <strong>blockchain</strong> y la
                     <strong>descentralización</strong> para cambiar la economía tal y como la conocemos.
                 </p>
-                <input type="button" value="Registrarme">
+                <a href="#contactanos"><input type="button" value="Registrarme"></a>
             </div>
             <div class="svg">
                 <img src="img/cryptocurrency.svg" alt="">
@@ -75,13 +75,12 @@
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
                 </div>
             </div>
-
         </div>
     </section>
     <section id="proyectos">
         <h2 class="titulos-h2">Proyectos del Club</h2>
         <div class="columnas">
-            <div class="oscuro">
+            <div>
                 <div class="item" id="bit2me">
                     <div class="partetext">
                         <h3 class="minitexto">Aprendizaje autónomo</h3>
@@ -96,76 +95,89 @@
                             Lorem
                             Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
                             including versions of Lorem Ipsum.</p>
-                        <a href="bit2me.html"><input type="button" value="Conocer mas"></a>
+                        <a href="bit2me.html"><input type="button" value="Saber más"></a>
                     </div>
                     <div class="parteimagen">
                         <img src="img/bit2me.png" loading="lazy">
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <div class="parteimagen">
-                    <img src="img/ligadebolsa.jpg" loading="lazy">
-                </div>
-                <div class="partetext">
-                    <h3 class="minitexto">Liga Universitaria</h3>
-                    <h2 class="item-h2">Liga de Bolsa</h2>
-                    <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                        only five centuries, but also the leap into electronic typesetting, remaining essentially
-                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                        Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-                        including versions of Lorem Ipsum.</p>
-                    <a href="ligabolsa.html"><input type="button" value="Conocer mas"></a>
+            <div class="oscuro">
+                <div class="item" id="ligabolsa">
+                    <div class="parteimagen">
+                        <img src="img/ligadebolsa.png" loading="lazy">
+                    </div>
+                    <div class="partetext">
+                        <h3 class="minitexto">Liga Universitaria</h3>
+                        <h2 class="item-h2">Liga de Bolsa</h2>
+                        <p class="item-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                            unknown
+                            printer took a galley of type and scrambled it to make a type specimen book. It has survived
+                            not
+                            only five centuries, but also the leap into electronic typesetting, remaining essentially
+                            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                            Lorem
+                            Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                            including versions of Lorem Ipsum.</p>
+                        <a href="ligabolsa.html"><input type="button" value="Saber más"></a>
+                    </div>
                 </div>
             </div>
-            <div class="item" id="bit2me">
-                <div class="partetext">
-                    <h3 class="minitexto">Creación de NFTs</h3>
-                    <h2 class="item-h2">Fundación Antonio Camaró</h2>
-                    <p class="item-text">El objetivo de este proyecto es recaudar 40,000$ en plazo de 18 meses desde su
-                        puesta
-                        en marcha, con el fin de financiar el proyecto social ZÉOSIS de la fundación. Además de acercar
-                        oriente a occidente
-                        a través del arte y el dialogo.</p>
-                    <p class="item-text">Para ello se realizará una creación de una colección única de NFT's y su
-                        posterior venta y comercialización. Con la colaboración
-                        de los estudiantes del CriptoClub de la Universidad Europea</p>
-                    <a href="fundacioncamaro.html"><input type="button" value="Conocer mas"></a>
-                </div>
-                <div class="parteimagen">
-                    <img src="img/antoniocamarologo.png" loading="lazy">
+            <div>
+                <div class="item" id="camaro">
+                    <div class="partetext">
+                        <h3 class="minitexto">Creación de NFTs</h3>
+                        <h2 class="item-h2">Fundación Antonio Camaró</h2>
+                        <p class="item-text">El objetivo de este proyecto es recaudar 40,000$ en plazo de 18 meses desde
+                            su
+                            puesta
+                            en marcha, con el fin de financiar el proyecto social ZÉOSIS de la fundación. Además de
+                            acercar
+                            oriente a occidente
+                            a través del arte y el dialogo.</p>
+                        <p class="item-text">Para ello se realizará una creación de una colección única de NFT's y su
+                            posterior venta y comercialización. Con la colaboración
+                            de los estudiantes del CriptoClub de la Universidad Europea</p>
+                        <a href="fundacioncamaro.html"><input type="button" value="Saber más"></a>
+                    </div>
+                    <div class="parteimagen">
+                        <img src="img/antoniocamarologo.png" loading="lazy">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="contactanos">
-        <div>
-            <h2 class="titulo-contactar">Contáctanos</h2>
-            <form action="/action_page.php" class="formulario">
-                <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                <label for="country">Por que te has unido al club</label>
-                <select id="country" name="country">
-                    <option value="australia">Australia</option>
-                    <option value="canada">Canada</option>
-                    <option value="usa">USA</option>
-                </select>
-                <input type="submit" value="Submit">
+        <div class="container">
+            <form action="#">
+                <div class="title">Apúntame</div>
+                <div class="input-box underline">
+                    <input type="text" placeholder="Nombre" required>
+                    <div class="underline"></div>
+                </div>
+                <div class="input-box underline">
+                    <input type="text" placeholder="Apellidos" required>
+                    <div class="underline"></div>
+                </div>
+                <div class="input-box underline">
+                    <input type="text" placeholder="Número de expediente" required>
+                    <div class="underline"></div>
+                </div>
+                <div class="input-box underline">
+                    <input type="text" placeholder="Correo electrónico" required>
+                    <div class="underline"></div>
+                </div>
+                <div class="input-box button">
+                    <input type="submit" name="" value="Enviar">
+                </div>
             </form>
         </div>
     </section>
     <footer>
-        <img src="img/uem-logo.png" height="50px" width="180px" loading="lazy">
         <button onclick="darkmode()">Toggle dark mode</button>
     </footer>
 </body>
-
 <!-- SCRIPT -->
 <script src="main.js"></script>
 
