@@ -74,7 +74,6 @@ const getWalletBalance = async () => {
 
 // function to show the user dashboard
 const showUserDashboard = async () => {
-
   // if the user is not logged in - userWalletAddress is null
   if (!window.userWalletAddress) {
 
@@ -97,6 +96,15 @@ const showUserDashboard = async () => {
     return false;
   }
 
+  window.location.href = "/index.html";
+  
+  //ESCONDEMOS EL MENU DE LOGIN
+  document.querySelector(".buttonlogin").style.display = "none";
+
+  //MOSTRAMOS AVATAR
+  document.querySelector(".avatar").style.display = "block";
+
+  /*
   // change the page title
   document.title = "Web3 Dashboard 🤝";
 
@@ -117,13 +125,24 @@ const showUserDashboard = async () => {
   showUserWalletAddress();
 
   // get the user's wallet balance
-  getWalletBalance();
+  getWalletBalance();*/
 };
 
 function darkmode() {
   var element = document.body;
+  var imagen = document.querySelector("i");
   element.classList.toggle("dark-mode");
   element.classList.toggle("texto-blanco");
+  document.querySelector(".titulos-h2").style.color = "white";
+
+  if(element.classList.contains("dark-mode")){
+    imagen.classList.remove("fa-solid fa-sun");
+    imagen.classList.toggle("fa-solid fa-sun");
+  } else {
+    imagen.classList.toggle("fa-solid fa-moon");
+  }
+
+
 };
 
 /*

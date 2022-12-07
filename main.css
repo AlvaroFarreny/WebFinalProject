@@ -341,10 +341,7 @@ input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   width: 100%;
@@ -469,20 +466,6 @@ span.psw {
   }
 }
 
-.dark-mode {
-  background-color: #121212;
-  
-}
-
-.texto-blanco * {
-  color: white;
-}
-
-#camaro{
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
 
 /* CONTACTANOS */
 .container{
@@ -574,6 +557,22 @@ span.psw {
   height: 800px;
   background-image: url("img/fondocontacto.jpg");
 }
+
+/*FIN DEL CONTACTANOS */
+
+.dark-mode {
+  background-color: #121212;
+}
+
+.texto-blanco p,h1,h2,h3,h3,h4{
+  color: white;
+}
+
+#camaro{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
 
 .headerFijo{
   width: 100%;

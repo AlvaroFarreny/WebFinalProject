@@ -20,9 +20,11 @@
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="#">Inicio</a></li>
+                        
+                        <li><button onclick="darkmode()"><i class="fa-solid fa-moon"></i></button></li>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobreNosotros">Nosotros</a></li>
                         <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="#">Nosotros</a></li>
                         <li><a href="./login.html" id="buttonlogin">Login</a></li>
                         <li class="perfil" id="avatar"><a href=""><img src="img/avatar.svg"></a>Profile</li>
                     </ul>
@@ -30,7 +32,7 @@
             </div>
         </div>
     </header>
-    <div class="container__cover">
+    <div class="container__cover" id="inicio">
         <div class="cover">
             <div class="text">
                 <h1>Bienvenidos al CriptoClub</h1>
@@ -168,13 +170,12 @@
                     <div class="underline"></div>
                 </div>
                 <div class="input-box button">
-                    <input type="submit" name="" value="Enviar">
+                    <input type="submit" name="" value="Registrarme">
                 </div>
             </form>
         </div>
     </section>
     <footer>
-        <button onclick="darkmode()">Toggle dark mode</button>
     </footer>
 </body>
 <!-- SCRIPT -->
