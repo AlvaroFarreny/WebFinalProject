@@ -583,3 +583,27 @@ span.psw {
   background-color: white;
   transition: all 0.3s ease;
 }
+
+footer{
+  background-color: white;
+}
+
+.footer{
+  display: flex; 
+  justify-content: center;
+
+  /* or inline-flex */
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.social-media button{
+  width: 20%;
+  height: 100;
+  padding-left: 30px;
+}
+
+.copyright{
+  text-align: center;
+  padding-bottom: 10px;
+}
