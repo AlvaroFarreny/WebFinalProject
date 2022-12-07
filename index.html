@@ -7,7 +7,6 @@
     <title>CriptoClub</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
     <script src="https://kit.fontawesome.com/e4d9b954f0.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/favicon-32x32.png">
 </head>
@@ -179,6 +178,14 @@
     </footer>
 </body>
 <!-- SCRIPT -->
-<script src="main.js"></script>
+<script src='main.js'></script>
+
+<script>
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.remove("header", window.scrollY > 715);
+        header.classList.toggle("headerFijo", window.scrollY > 715);
+    })
+</script>
 
 </html>
