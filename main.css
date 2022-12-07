@@ -564,7 +564,7 @@ span.psw {
   background-color: #121212;
 }
 
-.texto-blanco p,h1,h2,h3,h3,h4{
+.texto-blanco *{
   color: white;
 }
 

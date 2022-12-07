@@ -133,7 +133,6 @@ function darkmode() {
   var imagen = document.querySelector("i");
   element.classList.toggle("dark-mode");
   element.classList.toggle("texto-blanco");
-  document.querySelector(".titulos-h2").style.color = "white";
 
   if(element.classList.contains("dark-mode")){
     imagen.classList.remove("fa-solid fa-sun");
@@ -141,8 +140,6 @@ function darkmode() {
   } else {
     imagen.classList.toggle("fa-solid fa-moon");
   }
-
-
 };
 
 /*
