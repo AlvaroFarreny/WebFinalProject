@@ -1,7 +1,30 @@
 /* Proyecto Bit2me */
-
+.container_inicio{
+    display: flex;
+    justify-content: center;
+}
+.container_inicio .astronauta img{
+    margin-right: 40px;
+    height: 250px;
+}
+.container_inicio .uem_logo img{
+    margin-top: 200px;
+    margin-left: 40px;
+    height: 100px;
+}
+.inicioBit2me #titulo_bit2me{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    color: white;
+}
 .inicioBit2me{
     background-color: #044e97;
+    background-image: linear-gradient(180deg, #044e97 0%,#0f325b 100%);
+    background-position: left center;
+    background-repeat: no-repeat;
+    border-width: 0px 0px 0px 0px;
+    border-color: #eae9e9;
+    border-style: solid;
   }
   
   .inicioBit2me img{
@@ -10,6 +33,9 @@
     margin-right: auto;
   }
   
+  .introduccion div{
+    margin-top: 40px;
+  }
   .roadmap img {
     display: block;
     align-self: center;
