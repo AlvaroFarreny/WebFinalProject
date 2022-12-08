@@ -1,0 +1,19 @@
+/* Proyecto Bit2me */
+
+.inicioBit2me{
+    background-color: #044e97;
+  }
+  
+  .inicioBit2me img{
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .roadmap img {
+    display: block;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
