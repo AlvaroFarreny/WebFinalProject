@@ -20,8 +20,7 @@
             <div class="menu">
                 <nav>
                     <ul>
-
-                        <li><button onclick="darkmode()"><i class="fa-solid fa-moon"></i></button></li>
+                        <li><button><i id="icon1" onclick="darkmode('icon1')" class="fa-solid fa-moon"></i></button></li>
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#sobreNosotros">Nosotros</a></li>
                         <li><a href="#proyectos">Proyectos</a></li>
@@ -178,9 +177,9 @@
     <footer>
         <div class="footer">
             <div class="social-media">
-                <button><i class="fa-brands fa-twitter"></i></button>
-                <button><i class="fa-brands fa-instagram"></i></button>
-                <button><i class="fa-brands fa-linkedin"></i></button>
+                <button><a href=""><i class="fa-brands fa-twitter"></i></a></button>
+                <button><a href=""><i class="fa-brands fa-instagram"></i></a></button>
+                <button><a href="https://www.linkedin.com/company/criptoclub/"><i class="fa-brands fa-linkedin"></i></a></button>
             </div>
         </div>
         <div class="copyright">
@@ -190,13 +189,5 @@
 </body>
 <!-- SCRIPT -->
 <script src='main.js'></script>
-
-<script>
-    window.addEventListener("scroll", function () {
-        var header = document.querySelector("header");
-        header.classList.remove("header", window.scrollY > 715);
-        header.classList.toggle("headerFijo", window.scrollY > 715);
-    })
-</script>
 
 </html>
