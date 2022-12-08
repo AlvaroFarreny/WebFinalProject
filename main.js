@@ -1,3 +1,8 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+  BarraFija();
+});
+
 // 1. Web3 login function
 const loginWithEth = async () => {
   // 1.1 check if there is global window.web3 instance
@@ -97,7 +102,7 @@ const showUserDashboard = async () => {
   }
 
   window.location.href = "/index.html";
-  
+
   //ESCONDEMOS EL MENU DE LOGIN
   document.querySelector(".buttonlogin").style.display = "none";
 
@@ -128,36 +133,23 @@ const showUserDashboard = async () => {
   getWalletBalance();*/
 };
 
-function darkmode() {
-  var element = document.body;
-  var imagen = document.querySelector("i");
-  element.classList.toggle("dark-mode");
-  element.classList.toggle("texto-blanco");
+// Cambiar barra de navegacion y circulo al bajar
+function BarraFija() {
+  window.addEventListener("scroll", function () {
+    var header = document.querySelector("header");
+    header.classList.remove("header", window.scrollY > 715);
+    header.classList.toggle("headerFijo", window.scrollY > 715);
+  })
+};
 
-  if(element.classList.contains("dark-mode")){
-    imagen.classList.remove("fa-solid fa-sun");
-    imagen.classList.toggle("fa-solid fa-sun");
+
+function darkmode(iconID) {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+
+  if (document.getElementById(iconID).className == "fa-solid fa-moon") {
+    document.getElementById(iconID).className = "fa-solid fa-sun";
   } else {
-    imagen.classList.toggle("fa-solid fa-moon");
+    document.getElementById(iconID).className = "fa-solid fa-moon";
   }
 };
-
-/*
-// Cambiar barra de navegacion y circulo al bajar
-window.onload = function BarraFija() {
-    if (scroll >= 200) {
-      $(".header").addClass("headerFijo");
-    }
-    else {
-      $(".header").removeClass("headerFijo");
-    }
-};
-*/    
-
-// Cambiar barra de navegacion y circulo al bajar
-
-window.addEventListener("scroll", function () {
-  var header = document.querySelector("header");
-  header.classList.remove("header", window.scrollY > 0);
-  header.classList.toggle("headerFijo", window.scrollY > 0);
-})
