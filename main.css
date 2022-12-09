@@ -5,6 +5,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 
+
+:root{
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -568,7 +573,6 @@ span.psw {
   margin-top: 50px;
   margin-bottom: 100px;
 }
-
 
 .headerFijo{
   width: 100%;

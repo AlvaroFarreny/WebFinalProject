@@ -101,6 +101,7 @@ const showUserDashboard = async () => {
     return false;
   }
 
+    
   window.location.href = "/index.html";
 
   //ESCONDEMOS EL MENU DE LOGIN
@@ -147,9 +148,12 @@ function darkmode(iconID) {
   var element = document.body;
   element.classList.toggle("dark-mode");
 
+
   if (document.getElementById(iconID).className == "fa-solid fa-moon") {
     document.getElementById(iconID).className = "fa-solid fa-sun";
+    document.getElementById("logonavbar").src="/img/logoizq.png";
   } else {
     document.getElementById(iconID).className = "fa-solid fa-moon";
+    document.getElementById("logonavbar").src="/img/logoizqblack.png";
   }
 };
