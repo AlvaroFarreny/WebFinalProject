@@ -5,10 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 
-
 :root{
-}
 
+}
 
 * {
   margin: 0;
@@ -144,15 +143,15 @@ header {
   font-size: 16px;
   border-radius: 50px;
   margin-top: 40px;
-  background: linear-gradient(to right, #fe7676, #f54d4d);
+  background: linear-gradient(to right, #ee8f00, #ff531a);
   color: #fff;
   cursor: pointer;
-  box-shadow: 1px 1px 30px -12px #f54d4d;
+  box-shadow: 1px 1px 30px -12px #ff531a;
   transition: all 300ms;
 }
 
 .container__cover .text input:hover {
-  box-shadow: 1px 1px 30px 0px #f54d4d;
+  box-shadow: 1px 1px 30px 0px #ff531a;
 }
 
 .container__cover .svg img {
@@ -269,7 +268,8 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (min-widht:700px) {}
+@media only screen and (min-widht:700px) {
+}
 
 .minitexto {
   color: rgb(93, 69, 220);
@@ -575,7 +575,7 @@ span.psw {
 
 #contactanos{
   height: 800px;
-  background-image: url("img/fondocontacto.jpg");
+  background: linear-gradient(to right, #C02626 0%, rgb(118, 0, 0) 100%);
 }
 
 /*FIN DEL CONTACTANOS */
