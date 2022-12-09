@@ -127,7 +127,6 @@ const showUserDashboard = async () => {
   document.querySelector(".perfil").style.display = "block";
 
   // show the user's wallet address
-
   showUserWalletAddress();
 
   // get the user's wallet balance
