@@ -22,20 +22,29 @@
                 <nav>
                     <ul>
                         <li><button><i id="icon1" onclick="darkmode('icon1')" class="fa-solid fa-moon"></i></button></li>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#sobreNosotros">Nosotros</a></li>
-                        <li><a href="#proyectos">Proyectos</a></li>
-                        <li><a href="./login.html" id="buttonlogin">Login</a></li>
+                        <li><a href="/index.html#inicio">Inicio</a></li>
+                        <li><a href="/index.html#sobreNosotros">Nosotros</a></li>
+                        <li><a href="/index.html#proyectos">Proyectos</a></li>
                         <li class="perfil" id="avatar"><a href=""><img src="img/avatar.svg"></a>Profile</li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <section id="contactanos">
-        <div class="container">
-            <button class="logout-btn">Logout</button>
-        </div>
+    <section class="section__profile">
+        <!-- DASHBOARD SECTION -->
+        <section class="dashboard-section">
+            <h2 class="wallet-status">Wallet Connected! 🤝</h2>
+            <h3 class="wallet-address-heading">
+            ETH Wallet Address:
+            <span class="wallet-address"></span>
+            </h3>
+            <h3 class="wallet-balance-heading">
+            ETH Balance:
+            <span class="wallet-balance"></span>
+            </h3>
+            <button class="logout-btn">🔐 Log out</button>
+        </section>
     </section>
     <footer>
         <div class="footer">

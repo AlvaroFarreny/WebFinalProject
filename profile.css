@@ -8,3 +8,13 @@
     cursor: pointer;
     margin-top: 40px;
   }
+
+  .section__profile {
+    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    background: linear-gradient(to right, #C02626 0%, rgb(118, 0, 0) 100%);
+  }
