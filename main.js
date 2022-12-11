@@ -3,8 +3,14 @@ document.addEventListener('DOMContentLoaded', function () {
   BarraFija();
 });
 
+// Inicializamos una variable que indica si el usuario ha iniciado sesión
+let loggedIn = false;
+
+const buttonlogin = document.getElementById('buttonlogin');
+const avatar = document.getElementById('avatar');
+
 // 1. Web3 login function
-const loginWithEth = async () => {
+const loginWithMetamask = async () => {
   // 1.1 check if there is global window.web3 instance
   if (window.web3) {
     try {
@@ -24,17 +30,101 @@ const loginWithEth = async () => {
 
       // 4. store the user's wallet address in local storage
       window.localStorage.setItem("userWalletAddress", selectedAccount);
+      
+      
+      // Guardamos una clave en el almacenamiento local para indicar que el usuario ha iniciado sesión
+      loggedIn = true;
+      localStorage.setItem('loggedIn', true);
 
       // 5. show the user dashboard
       showUserDashboard();
+
+      
 
     } catch (error) {
       alert(error);
     }
   } else {
-    alert("wallet not found");
+    alert("Wallet not found");
   }
 };
+
+// function to show the user dashboard
+const showUserDashboard = async () => {
+  // if the user is not logged in - userWalletAddress is null
+  if (!window.userWalletAddress) {
+
+    // change the page title
+    document.title = "Web3 Login";
+
+    // show the login section
+    document.querySelector(".login-metamask-section").style.display = "block";
+
+    // hide the user dashboard section
+    document.querySelector(".dashboard-section").style.display = "none";
+
+    //MOSTRAMOS EL MENU DE LOGIN 
+    document.querySelector(".container-login").style.display = "block";
+
+    //ESCONDEMOS AVATAR
+    document.querySelector(".perfil").style.display = "none";
+
+    // return from the function
+    return false;
+  }
+
+  window.location.href = "/index.html";
+
+  //ESCONDEMOS EL MENU DE LOGIN
+  buttonlogin.style.display = "none";
+
+  //MOSTRAMOS AVATAR
+  avatar.style.display = "block";
+
+  /*
+  // change the page title
+  document.title = "Web3 Dashboard 🤝";
+
+  // hide the login section
+  document.querySelector(".login-metamask-section").style.display = "none";
+
+  // show the dashboard section
+  document.querySelector(".dashboard-section").style.display = "flex";
+
+  //ESCONDEMOS EL MENU DE LOGIN
+  document.querySelector(".container").style.display = "none";
+
+  //MOSTRAMOS AVATAR
+  document.querySelector(".perfil").style.display = "block";
+
+  // show the user's wallet address
+  showUserWalletAddress();
+
+  // get the user's wallet balance
+  getWalletBalance();*/
+};
+
+window.addEventListener('load', () => {
+  // Comprobamos si el usuario ha iniciado sesión
+  if (localStorage.getItem('loggedIn')) {
+    loggedIn = true;
+  }
+
+  // Si el usuario ha iniciado sesión
+  if (loggedIn) {
+    // Ocultamos el botón de inicio de sesión
+    buttonlogin.style.display = 'none';
+    
+    // Mostramos el avatar del usuario
+    avatar.style.display = 'block';
+
+    // Cuando se haga clic en el avatar
+    avatar.addEventListener('click', () => {
+      // Redirigimos al usuario a su perfil
+      window.location.replace('profile.html');
+    });
+  }
+});
 
 // web3 logout function
 const logout = () => {
@@ -44,15 +134,17 @@ const logout = () => {
   // remove the user's wallet address from local storage
   window.localStorage.removeItem("userWalletAddress");
 
-  // show the user dashboard
-  showUserDashboard();
+  loggedIn = false;
+  window.localStorage.removeItem("loggedIn");
+  
+  window.location.href = "/login.html";
 };
 
 // when the user clicks the logout button run the logout function
 document.querySelector(".logout-btn").addEventListener("click", logout);
 
-// 6. when the user clicks the login button run the loginWithEth function
-document.querySelector(".login-btn").addEventListener("click", loginWithEth);
+// 6. when the user clicks the login button run the loginWithMetamask function
+document.querySelector(".login-btn").addEventListener("click", loginWithMetamask);
 
 // show the user's wallet address from the global userWalletAddress variable
 const showUserWalletAddress = () => {
@@ -75,63 +167,6 @@ const getWalletBalance = async () => {
     balance,
     "ether"
   );
-};
-
-// function to show the user dashboard
-const showUserDashboard = async () => {
-  // if the user is not logged in - userWalletAddress is null
-  if (!window.userWalletAddress) {
-
-    // change the page title
-    document.title = "Web3 Login";
-
-    // show the login section
-    document.querySelector(".login-section").style.display = "block";
-
-    // hide the user dashboard section
-    document.querySelector(".dashboard-section").style.display = "none";
-
-    //ESCONDEMOS EL MENU DE LOGIN
-    document.querySelector(".container").style.display = "block";
-
-    //MOSTRAMOS AVATAR
-    document.querySelector(".perfil").style.display = "none";
-
-    // return from the function
-    return false;
-  }
-
-    
-  window.location.href = "/index.html";
-
-
-  //ESCONDEMOS EL MENU DE LOGIN
-  document.querySelector(".buttonlogin").style.display = "none";
-
-  //MOSTRAMOS AVATAR
-  document.querySelector(".avatar").style.display = "block";
-
-  /*
-  // change the page title
-  document.title = "Web3 Dashboard 🤝";
-
-  // hide the login section
-  document.querySelector(".login-section").style.display = "none";
-
-  // show the dashboard section
-  document.querySelector(".dashboard-section").style.display = "flex";
-
-  //ESCONDEMOS EL MENU DE LOGIN
-  document.querySelector(".container").style.display = "none";
-
-  //MOSTRAMOS AVATAR
-  document.querySelector(".perfil").style.display = "block";
-
-  // show the user's wallet address
-  showUserWalletAddress();
-
-  // get the user's wallet balance
-  getWalletBalance();*/
 };
 
 // Cambiar barra de navegacion y circulo al bajar
