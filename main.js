@@ -104,6 +104,7 @@ const showUserDashboard = async () => {
     
   window.location.href = "/index.html";
 
+
   //ESCONDEMOS EL MENU DE LOGIN
   document.querySelector(".buttonlogin").style.display = "none";
 
