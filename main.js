@@ -12,6 +12,7 @@ function BarraFija() {
   })
 };
 
+//funcion DARK MODE
 function darkmode(iconID) {
   var element = document.body;
   element.classList.toggle("dark-mode");
@@ -56,7 +57,6 @@ window.addEventListener('load', () => {
 });
 
 //WEB 3.0 FUNCIONES DESDE AQUI HACIA ABAJO!!!
-
 // 1. Web3 login function
 const loginWithMetamask = async () => {
   // 1.1 check if there is global window.web3 instance
@@ -151,7 +151,6 @@ const showUserDashboard = async () => {
   // get the user's wallet balance
   getWalletBalance();
 };
-
 
 // web3 logout function
 const logout = () => {
