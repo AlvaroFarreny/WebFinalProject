@@ -14,15 +14,27 @@ function BarraFija() {
 
 //funcion DARK MODE
 function darkmode(iconID) {
+  var r = document.querySelector(':root');
   var element = document.body;
   element.classList.toggle("dark-mode");
   
   if (document.getElementById(iconID).className == "fa-solid fa-moon") {
     document.getElementById(iconID).className = "fa-solid fa-sun";
     document.getElementById("logonavbar").src="/img/logoizq.png";
+    //dicionario de colores cambiado a darkmode
+    r.style.setProperty('--footer-color', '#121212');
+    r.style.setProperty('--header-color', '#121212');
+    r.style.setProperty('--gris-color', 'rgb(30, 30, 30)');
+    document.getElementById("botonDarkMode").firstChild.src = "images/darkMode0.png";
+  
   } else {
     document.getElementById(iconID).className = "fa-solid fa-moon";
     document.getElementById("logonavbar").src="/img/logoizqblack.png";
+    //dicionario de colores cambiado a light mode
+    r.style.setProperty('--footer-color', 'white');
+    r.style.setProperty('--header-color', 'white');
+    r.style.setProperty('--gris-color', 'rgb(245, 245, 245)');
+    
   }
 };
 
