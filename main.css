@@ -4,9 +4,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
-
 :root{
   --degradado-rojo: linear-gradient(to right, #C02626 0%, rgb(118, 0, 0) 100%);
+  --dark-color: #121212;
+  --light-color: white;
+  --header-color: white;
+  --color-hover-enlaces:#f7931a;
 }
 
 * {
@@ -66,7 +69,7 @@ header {
 }
 
 .menu ul li a:hover {
-  color: #f7931a;
+  color: var(--color-hover-enlaces);
   letter-spacing: 1.4px;
 }
 
@@ -80,7 +83,7 @@ header {
 }
 
 #icon1:hover{
-  color: #f7931a;
+  color: var(--color-hover-enlaces);
   letter-spacing: 1.4px;
 }
 
@@ -94,15 +97,15 @@ header {
   padding: 5px 19px;
   border-radius: 5px;
   background-color: transparent;
-  color: #f7931a;;
-  border: 2px solid #f7931a;
+  color: var(--color-hover-enlaces);;
+  border: 2px solid var(--color-hover-enlaces);
 }
 
 #buttonlogin:hover {
-  background: #f7931a;
-  box-shadow: 0 0 10px #f7931a;
+  background: var(--color-hover-enlaces);
+  box-shadow: 0 0 10px var(--color-hover-enlaces);
   color: white;
-  border: 2px solid #f7931a;;
+  border: 2px solid var(--color-hover-enlaces);;
 }
 
 /*COVER*/
@@ -581,7 +584,7 @@ span.psw {
 /*FIN DEL CONTACTANOS */
 
 .dark-mode {
-  background-color: #121212;
+  background-color: var(--dark-color);
 }
 
 #camaro{
@@ -595,7 +598,7 @@ span.psw {
   position: fixed;
   margin-top:0px;
   z-index: 1;
-  background-color: white;
+  background-color: var(--header-color);
   transition: all 0.3s ease;
 }
 
@@ -624,12 +627,13 @@ footer{
   text-align: center;
   padding-bottom: 10px;
 }
+
 .social-media i{
   color:black;
   transition: all 0.5s ease;
 }
 
 .social-media i:hover{
-  color: #f7931a;
+  color: var(--color-hover-enlaces);
   letter-spacing: 1.4px;
 }
