@@ -81,27 +81,27 @@ const showUserDashboard = async () => {
   //MOSTRAMOS AVATAR
   avatar.style.display = "block";
 
-  /*
+  
   // change the page title
-  document.title = "Web3 Dashboard 🤝";
+  //document.title = "Web3 Dashboard 🤝";
 
   // hide the login section
-  document.querySelector(".login-metamask-section").style.display = "none";
+  //document.querySelector(".login-metamask-section").style.display = "none";
 
   // show the dashboard section
-  document.querySelector(".dashboard-section").style.display = "flex";
+  //document.querySelector(".dashboard-section").style.display = "flex";
 
   //ESCONDEMOS EL MENU DE LOGIN
-  document.querySelector(".container").style.display = "none";
+  //document.querySelector(".container").style.display = "none";
 
   //MOSTRAMOS AVATAR
-  document.querySelector(".perfil").style.display = "block";
+  //document.querySelector(".perfil").style.display = "block";
 
   // show the user's wallet address
   showUserWalletAddress();
 
   // get the user's wallet balance
-  getWalletBalance();*/
+  getWalletBalance();
 };
 
 window.addEventListener('load', () => {
@@ -182,8 +182,7 @@ function BarraFija() {
 function darkmode(iconID) {
   var element = document.body;
   element.classList.toggle("dark-mode");
-
-
+  
   if (document.getElementById(iconID).className == "fa-solid fa-moon") {
     document.getElementById(iconID).className = "fa-solid fa-sun";
     document.getElementById("logonavbar").src="/img/logoizq.png";
