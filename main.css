@@ -79,7 +79,7 @@ header {
   text-decoration: none;
   font-weight: 550;
   font-size: 16px;
-  color: rgb(0, 0, 0);
+  color: var(--p-color);
   text-transform: uppercase;
   transition: all 0.5s ease;
 }
@@ -93,7 +93,7 @@ header {
   text-decoration: none;
   font-weight: 550;
   font-size: 16px;
-  color: rgb(0, 0, 0);
+  color: var(--p-color);
   text-transform: uppercase;
   transition: all 0.5s ease;
 }
@@ -149,6 +149,7 @@ header {
 .container__cover .text h1 {
   font-size: 36px;
   font-weight: 600;
+  color: var(--h1-color);
 }
 
 .container__cover .text p {
@@ -232,7 +233,7 @@ header {
 .item-text {
   padding: 10px 20px 10px 0px;
   text-align: justify;
-  color: rgb(36, 36, 36);
+  color: var(--p-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 28px
@@ -303,7 +304,7 @@ a {
 }
 
 .titulos-h3 {
-  color: rgb(36, 36, 36);
+  color: var(--h2-color);
   font-size: 22px;
   text-align: center;
   font-family: 'Lato', sans-serif;
@@ -321,14 +322,14 @@ a {
 }
 
 .partetext h2 {
-  color: rgb(36, 36, 36);
+  color: var(--h2-color);
   font-size: 40px;
   font-weight: 200;
   line-height: 54px;
 }
 
 .texto {
-  color: rgb(36, 36, 36);
+  color: var(--p-color);
   font-size: 18px;
   text-align: center;
   font-weight: 400;
@@ -338,7 +339,7 @@ a {
 }
 
 .centrar-p {
-  color: rgb(36, 36, 36);
+  color: var(--p-color);
   font-size: 18px;
   text-align: center;
   padding-top: 10px;
@@ -656,7 +657,7 @@ footer {
 }
 
 .social-media i {
-  color: black;
+  color: var(--p-color);
   transition: all 0.5s ease;
 }
 

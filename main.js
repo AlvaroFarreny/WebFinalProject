@@ -19,22 +19,33 @@ function darkmode(iconID) {
   element.classList.toggle("dark-mode");
   
   if (document.getElementById(iconID).className == "fa-solid fa-moon") {
+    setTimeout(() => {
+      
+    }, 900);
     document.getElementById(iconID).className = "fa-solid fa-sun";
     document.getElementById("logonavbar").src="/img/logoizq.png";
     //dicionario de colores cambiado a darkmode
     r.style.setProperty('--footer-color', '#121212');
     r.style.setProperty('--header-color', '#121212');
     r.style.setProperty('--gris-color', 'rgb(30, 30, 30)');
+    r.style.setProperty('--h1-color', 'rgb(219, 219, 219)');
+    r.style.setProperty('--h2-color', 'rgb(219, 219, 219)');
+    r.style.setProperty('--p-color', 'rgb(219, 219, 219)');
     document.getElementById("botonDarkMode").firstChild.src = "images/darkMode0.png";
   
   } else {
+    setTimeout(() => {
+      
+    }, 900);
     document.getElementById(iconID).className = "fa-solid fa-moon";
     document.getElementById("logonavbar").src="/img/logoizqblack.png";
     //dicionario de colores cambiado a light mode
     r.style.setProperty('--footer-color', 'white');
     r.style.setProperty('--header-color', 'white');
     r.style.setProperty('--gris-color', 'rgb(245, 245, 245)');
-    
+    r.style.setProperty('--h1-color', 'rgb(36, 36, 36)');
+    r.style.setProperty('--h2-color', 'rgb(36, 36, 36)');
+    r.style.setProperty('--p-color', 'rgb(36, 36, 36)');
   }
 };
 
