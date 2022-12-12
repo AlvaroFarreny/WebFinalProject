@@ -3,11 +3,59 @@ document.addEventListener('DOMContentLoaded', function () {
   BarraFija();
 });
 
+// Cambiar barra de navegacion y circulo al bajar
+function BarraFija() {
+  window.addEventListener("scroll", function () {
+    var header = document.querySelector("header");
+    header.classList.remove("header", window.scrollY > 715);
+    header.classList.toggle("headerFijo", window.scrollY > 715);
+  })
+};
+
+function darkmode(iconID) {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+  
+  if (document.getElementById(iconID).className == "fa-solid fa-moon") {
+    document.getElementById(iconID).className = "fa-solid fa-sun";
+    document.getElementById("logonavbar").src="/img/logoizq.png";
+  } else {
+    document.getElementById(iconID).className = "fa-solid fa-moon";
+    document.getElementById("logonavbar").src="/img/logoizqblack.png";
+  }
+};
+
+
+// FUNCION PARA INICIAR SESION EN LA WEB
+
 // Inicializamos una variable que indica si el usuario ha iniciado sesión
 let loggedIn = false;
 
 const buttonlogin = document.getElementById('buttonlogin');
 const avatar = document.getElementById('avatar');
+
+window.addEventListener('load', () => {
+  // Comprobamos si el usuario ha iniciado sesión
+  if (localStorage.getItem('loggedIn')) {
+    loggedIn = true;
+  }
+  // Si el usuario ha iniciado sesión
+  if (loggedIn) {
+    // Ocultamos el botón de inicio de sesión
+    buttonlogin.style.display = 'none';
+    
+    // Mostramos el avatar del usuario
+    avatar.style.display = 'block';
+
+    // Cuando se haga clic en el avatar
+    avatar.addEventListener('click', () => {
+      // Redirigimos al usuario a su perfil
+      window.location.replace('profile.html');
+    });
+  }
+});
+
+//WEB 3.0 FUNCIONES DESDE AQUI HACIA ABAJO!!!
 
 // 1. Web3 login function
 const loginWithMetamask = async () => {
@@ -104,27 +152,6 @@ const showUserDashboard = async () => {
   getWalletBalance();
 };
 
-window.addEventListener('load', () => {
-  // Comprobamos si el usuario ha iniciado sesión
-  if (localStorage.getItem('loggedIn')) {
-    loggedIn = true;
-  }
-
-  // Si el usuario ha iniciado sesión
-  if (loggedIn) {
-    // Ocultamos el botón de inicio de sesión
-    buttonlogin.style.display = 'none';
-    
-    // Mostramos el avatar del usuario
-    avatar.style.display = 'block';
-
-    // Cuando se haga clic en el avatar
-    avatar.addEventListener('click', () => {
-      // Redirigimos al usuario a su perfil
-      window.location.replace('profile.html');
-    });
-  }
-});
 
 // web3 logout function
 const logout = () => {
@@ -167,27 +194,4 @@ const getWalletBalance = async () => {
     balance,
     "ether"
   );
-};
-
-// Cambiar barra de navegacion y circulo al bajar
-function BarraFija() {
-  window.addEventListener("scroll", function () {
-    var header = document.querySelector("header");
-    header.classList.remove("header", window.scrollY > 715);
-    header.classList.toggle("headerFijo", window.scrollY > 715);
-  })
-};
-
-
-function darkmode(iconID) {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-  
-  if (document.getElementById(iconID).className == "fa-solid fa-moon") {
-    document.getElementById(iconID).className = "fa-solid fa-sun";
-    document.getElementById("logonavbar").src="/img/logoizq.png";
-  } else {
-    document.getElementById(iconID).className = "fa-solid fa-moon";
-    document.getElementById("logonavbar").src="/img/logoizqblack.png";
-  }
 };
