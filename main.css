@@ -17,6 +17,7 @@
   --degradado-rojo: linear-gradient(to right, #C02626 0%, rgb(118, 0, 0) 100%);
   --degradado-botones: linear-gradient(to right, #ee8f00 0%, #ff531a 100%);
   --degradado-botones-hover: linear-gradient(to left, #ee8f00 0%, #ff531a 100%);
+  --fondo-container-apuntame: white;
 }
 
 :dicionario {
@@ -211,6 +212,7 @@ header {
 
 .diferenciado {
   background-color: var(--gris-color);
+  padding-bottom: 20px;
 }
 
 .partetext {
@@ -513,7 +515,7 @@ span.psw {
 
 /* CONTACTANOS */
 .container {
-  background: #fff;
+  background: var(--fondo-container-apuntame);
   max-width: 350px;
   width: 100%;
   padding: 25px 30px;
@@ -607,6 +609,10 @@ span.psw {
   text-align: center;
 }
 
+#bit2me{
+  padding-bottom: 20px;
+}
+
 #contactanos {
   height: 800px;
   background: var(--degradado-rojo);
@@ -618,7 +624,7 @@ span.psw {
 }
 
 #camaro {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 100px;
 }
 
