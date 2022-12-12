@@ -6,7 +6,7 @@
 
 
 :root{
-
+  --degradado-rojo: linear-gradient(to right, #C02626 0%, rgb(118, 0, 0) 100%);
 }
 
 * {
@@ -575,7 +575,7 @@ span.psw {
 
 #contactanos{
   height: 800px;
-  background: linear-gradient(to right, #C02626 0%, rgb(118, 0, 0) 100%);
+  background: var(--degradado-rojo);
 }
 
 /*FIN DEL CONTACTANOS */
