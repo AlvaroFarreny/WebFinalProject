@@ -75,6 +75,11 @@ window.addEventListener('load', () => {
     avatar.addEventListener('click', () => {
       // Redirigimos al usuario a su perfil
       window.location.replace('profile.html');
+      // show the user's wallet address
+      showUserWalletAddress();
+      // get the user's wallet balance
+      getWalletBalance();
+
     });
   }
 });
@@ -167,12 +172,6 @@ const showUserDashboard = async () => {
 
   //MOSTRAMOS AVATAR
   //document.querySelector(".perfil").style.display = "block";
-
-  // show the user's wallet address
-  showUserWalletAddress();
-
-  // get the user's wallet balance
-  getWalletBalance();
 };
 
 // web3 logout function
@@ -207,7 +206,6 @@ const getWalletBalance = async () => {
   if (!window.userWalletAddress) {
     return false;
   }
-
   // get the user's wallet balance
   const balance = await window.web3.eth.getBalance(window.userWalletAddress);
 

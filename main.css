@@ -416,10 +416,6 @@ img.avatar {
   border-radius: 50%;
 }
 
-.container {
-  padding: 16px;
-}
-
 span.psw {
   float: right;
   padding-top: 16px;
@@ -514,7 +510,12 @@ span.psw {
 
 
 /* CONTACTANOS */
-.container {
+
+.container_apuntame {
+  padding: 16px;
+}
+
+.container_apuntame {
   background: var(--fondo-container-apuntame);
   max-width: 350px;
   width: 100%;
@@ -524,14 +525,14 @@ span.psw {
   
 }
 
-.container form .title {
+.container_apuntame form .title {
   font-size: 30px;
   font-weight: 600;
   margin: 20px 0 10px 0;
   position: relative;
 }
 
-.container form .title:before {
+.container_apuntame form .title:before {
   content: '';
   position: absolute;
   margin-top: 10px;
@@ -543,14 +544,14 @@ span.psw {
   background: var(--degradado-botones);
 }
 
-.container form .input-box {
+.container_apuntame form .input-box {
   width: 100%;
   height: 45px;
   margin-top: 25px;
   position: relative;
 }
 
-.container form .input-box input {
+.container_apuntame form .input-box input {
   width: 100%;
   height: 100%;
   outline: none;
@@ -560,7 +561,7 @@ span.psw {
   border: none;
 }
 
-.container form .underline::before {
+.container_apuntame form .underline::before {
   content: '';
   position: absolute;
   height: 2px;
@@ -570,7 +571,7 @@ span.psw {
   bottom: 0;
 }
 
-.container form .underline::after {
+.container_apuntame form .underline::after {
   content: '';
   position: absolute;
   height: 2px;
@@ -583,17 +584,17 @@ span.psw {
   transition: all 0.3s ease;
 }
 
-.container form .input-box input:focus~.underline::after,
-.container form .input-box input:valid~.underline::after {
+.container_apuntame form .input-box input:focus~.underline::after,
+.container_apuntame form .input-box input:valid~.underline::after {
   transform: scaleX(1);
   transform-origin: left;
 }
 
-.container form .button {
+.container_apuntame form .button {
   margin: 40px 0 20px 0;
 }
 
-.container .input-box input[type="submit"] {
+.container_apuntame .input-box input[type="submit"] {
   background: var(--degradado-botones);
   font-size: 17px;
   color: #fff;
@@ -602,12 +603,12 @@ span.psw {
   transition: all 0.3s ease;
 }
 
-.container .input-box input[type="submit"]:hover {
+.container_apuntame .input-box input[type="submit"]:hover {
   letter-spacing: 1px;
   background: var(--degradado-botones-hover);
 }
 
-.container .option {
+.container_apuntame .option {
   font-size: 14px;
   text-align: center;
 }
