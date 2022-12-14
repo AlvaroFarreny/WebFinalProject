@@ -86,7 +86,7 @@ header {
   text-align: left;
 }
 
-.datos-usuario h2{
+.datos-usuario h2 {
   font-weight: 600;
 }
 
@@ -94,28 +94,28 @@ header {
   font-size: 25px;
   font-weight: 500;
 }
+
 .datos-usuario h4 {
   font-size: 25px;
   font-weight: 300;
 }
-.container_calendar{
+
+.container_calendar {
   width: fit-content;
   height: fit-content;
 }
 
 
 .tabla {
-  table-layout:fixed;
-  border-collapse:collapse;
+  table-layout: fixed;
+  border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
   font-family: sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.tabla tbody{
-
-}
+.tabla tbody {}
 
 .tabla thead tr {
   background-color: #009879;
@@ -124,7 +124,7 @@ header {
 }
 
 .tabla td {
-    padding: 12px 40px;
+  padding: 12px 40px;
 }
 
 .tabla tbody tr {
@@ -153,6 +153,7 @@ header {
 
 .section__profile {
   margin-top: 0px;
+  margin-bottom: 0px;
   padding: 40px;
   display: black;
   align-items: center;
@@ -161,13 +162,13 @@ header {
   background: linear-gradient(to right, #C02626 0%, rgb(118, 0, 0) 100%);
 }
 
-
-.wallet-address-heading{
+.wallet-address-heading {
   color: white;
   letter-spacing: 1.5px;
   margin-top: -20px;
   text-align: center;
 }
+
 .wallet-balance-heading {
   color: white;
   letter-spacing: 1.5px;
