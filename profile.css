@@ -1,3 +1,20 @@
+:root {
+  --p-color:rgb(36, 36, 36);
+  --h1-color:rgb(36, 36, 36);
+  --h2-color:rgb(36, 36, 36);
+  --h3-color:#C02626;
+  --footer-color: var(--footer-color);
+  --header-color: var(--header-color);
+  --gris-color: rgb(245, 245, 245);
+  --dark-color: #121212;
+  --color-hover-enlaces: #f7931a;
+  --degradado-rojo: linear-gradient(to right, #C02626 0%, rgb(118, 0, 0) 100%);
+  --degradado-botones: linear-gradient(to right, #ee8f00 0%, #ff531a 100%);
+  --degradado-botones-hover: linear-gradient(to left, #ee8f00 0%, #ff531a 100%);
+  --fondo-container-apuntame: white;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -56,7 +73,7 @@ header {
 
 .columns .container_info {
   background-color: DodgerBlue;
-  color: white;
+  color: var(--p-color);
   margin: 10px;
   text-align: center;
   font-size: 30px;
