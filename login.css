@@ -243,3 +243,11 @@ header {
 #darkmode-login{
   display: none;
 }
+
+.register a{
+  color: black;
+}
+
+.register a:hover{
+  color: red;
+}
