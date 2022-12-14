@@ -131,14 +131,16 @@ body {
 
 .container-login .metamask button {
   background: linear-gradient(to right, #ee8f00 0%, #ff531a 100%);
-  margin: 20px 0 15px 0;
+  margin: 10px 0 15px 0;
 }
 
 .container-login .metamask button:hover {
   background: linear-gradient(to left, #ee8f00 0%, #ff531a 100%);
-  margin: 20px 0 15px 0;
+  margin: 10px 0 15px 0;
   letter-spacing: 0.8px;
 }
+
+
 
 
 /* MENU DE NAVEGACIÓN */

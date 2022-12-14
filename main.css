@@ -283,7 +283,7 @@ header {
   padding: 20px;
 }
 
-#contactanos {
+#register {
   margin-top: 20px;
   padding: 40px;
   display: flex;
@@ -537,9 +537,9 @@ span.psw {
   position: absolute;
   margin-top: 10px;
   height: 4px;
-  width: 120px;
+  width: 30px;
   left: 0px;
-  bottom: -2px;
+  bottom: 1px;
   border-radius: 5px;
   background: var(--degradado-botones);
 }
@@ -617,7 +617,7 @@ span.psw {
   padding-bottom: 20px;
 }
 
-#contactanos {
+#register {
   height: 800px;
   background: var(--degradado-rojo);
 }
