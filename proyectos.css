@@ -1,7 +1,7 @@
 /* Proyecto Bit2me */
-.inicioBit2me{
+.inicioBit2me {
   background-color: #044e97;
-  background-image: linear-gradient(180deg, #044e97 0%,#0f325b 100%);
+  background-image: linear-gradient(180deg, #044e97 0%, #0f325b 100%);
   background-position: left center;
   background-repeat: no-repeat;
   border-width: 0px 0px 0px 0px;
@@ -9,41 +9,144 @@
   border-style: solid;
 }
 
-.inicioBit2me #titulo_bit2me{
+.inicioBit2me #titulo_bit2me {
   padding-top: 30px;
   padding-bottom: 50px;
   color: white;
 }
 
-.inicioBit2me .container_inicio{
-    display: flex;
-    justify-content: center;
-}
-.inicioBit2me .container_inicio .astronauta img{
-    margin-right: 40px;
-    height: 250px;
-}
-.inicioBit2me .container_inicio .uem_logo img{
-    margin-top: 200px;
-    margin-left: 40px;
-    height: 100px;
+.inicioBit2me .container_inicio {
+  display: flex;
+  justify-content: center;
 }
 
+.inicioBit2me .container_inicio .astronauta img {
+  margin-right: 40px;
+  height: 250px;
+}
 
-  
-  .inicioBit2me img{
-    margin-top: 150px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .introduccion div{
-    margin-top: 40px;
-  }
-  .roadmap img {
-    display: block;
-    align-self: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-  }
+.inicioBit2me .container_inicio .uem_logo img {
+  margin-top: 200px;
+  margin-left: 40px;
+  height: 100px;
+}
+
+.inicioBit2me img {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introduccion div {
+  margin-top: 40px;
+}
+
+.roadmap img {
+  display: block;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/* Proyecto LigaDeB */
+.inicioLigaBolsa {
+  background-color: #0BAB64;
+  background-image: linear-gradient(180deg, #0BAB64 0%, #3BB78F 100%);
+  background-position: left center;
+  background-repeat: no-repeat;
+  border-width: 0px 0px 0px 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+}
+
+.inicioLigaBolsa #titulo_LigaBolsa {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.inicioLigaBolsa .container_inicio {
+  display: flex;
+  justify-content: center;
+}
+
+.inicioLigaBolsa .container_inicio .astronauta img {
+  margin-right: 40px;
+  height: 250px;
+}
+
+.inicioLigaBolsa .container_inicio .uem_logo img {
+  margin-top: 200px;
+  margin-left: 40px;
+  height: 100px;
+}
+
+.inicioLigaBolsa img {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introduccion div {
+  margin-top: 40px;
+}
+
+.roadmap img {
+  display: block;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/* Proyecto AntonioNTFs */
+.inicioFunda {
+  background-color: #f2994a;
+  background-image: linear-gradient(to right, #f2994a, #f2c94c); 
+  background-position: left center;
+  background-repeat: no-repeat;
+  border-width: 0px 0px 0px 0px;
+  border-color: #eae9e9;
+  border-style: solid;
+}
+
+.inicioFunda #titulo_Funda {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.inicioFunda .container_inicio {
+  display: flex;
+  justify-content: center;
+}
+
+.inicioFunda .container_inicio .astronauta img {
+  margin-right: 40px;
+  height: 250px;
+}
+
+.inicioFunda .container_inicio .uem_logo img {
+  margin-top: 200px;
+  margin-left: 40px;
+  height: 100px;
+}
+
+.inicioFunda img {
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introduccion div {
+  margin-top: 40px;
+}
+
+.roadmap img {
+  display: block;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
