@@ -71,15 +71,15 @@
   justify-content: center;
 }
 
-.inicioLigaBolsa .container_inicio .astronauta img {
+.inicioLigaBolsa .container_inicio .slider_lupa_liga-de-bolsa img {
   margin-right: 40px;
   height: 250px;
 }
 
-.inicioLigaBolsa .container_inicio .uem_logo img {
+.inicioLigaBolsa .container_inicio .liga_de_bolsa_logo img {
   margin-top: 200px;
   margin-left: 40px;
-  height: 100px;
+  height: 300px;
 }
 
 .inicioLigaBolsa img {
@@ -122,15 +122,9 @@
   justify-content: center;
 }
 
-.inicioFunda .container_inicio .astronauta img {
+.inicioFunda .container_inicio .antoniocamarologo img {
   margin-right: 40px;
   height: 250px;
-}
-
-.inicioFunda .container_inicio .uem_logo img {
-  margin-top: 200px;
-  margin-left: 40px;
-  height: 100px;
 }
 
 .inicioFunda img {
@@ -149,4 +143,8 @@
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+}
+
+.social-media i{
+  color: black;
 }

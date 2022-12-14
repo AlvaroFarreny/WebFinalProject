@@ -23,7 +23,7 @@ function darkmode(iconID) {
       
     }, 900);
     document.getElementById(iconID).className = "fa-solid fa-sun";
-    document.getElementById("logonavbar").src="/img/logoizq.png";
+    document.getElementById("logonavbar").src="/img/logos/logo_uem_claro.png";
     //dicionario de colores cambiado a darkmode
     r.style.setProperty('--footer-color', '#121212');
     r.style.setProperty('--header-color', '#121212');
@@ -38,7 +38,7 @@ function darkmode(iconID) {
       
     }, 900);
     document.getElementById(iconID).className = "fa-solid fa-moon";
-    document.getElementById("logonavbar").src="/img/logoizqblack.png";
+    document.getElementById("logonavbar").src="/img/logos/logo_uem_oscuro.png";
     //dicionario de colores cambiado a light mode
     r.style.setProperty('--footer-color', 'white');
     r.style.setProperty('--header-color', 'white');
