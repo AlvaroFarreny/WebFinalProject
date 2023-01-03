@@ -12,6 +12,13 @@ function BarraFija() {
   })
 };
 
+
+document.getElementById("forgotpassw").addEventListener("click", function(){
+  document.getElementsByClassName("container-login")[0].style.display = "none";
+  document.getElementsByClassName("recordar-passw")[0].style.display = "block";
+});
+
+
 //funcion DARK MODE
 function darkmode(iconID) {
   var r = document.querySelector(':root');
