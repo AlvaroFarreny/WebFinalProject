@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/lib/codemirror.css?v=5.1.3">
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/hint/show-hint.css?v=5.1.3">
     <link rel="stylesheet" type="text/css" href="js/vendor/codemirror/addon/lint/lint.css?v=5.1.3">
-    <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/theme.css?v=5.1.3&nocache=543973365ltr&server=1">
+    <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/theme.css?v=5.1.3&nocache=1539392138ltr&server=1">
     <link rel="stylesheet" type="text/css" href="./themes/pmahomme/css/printview.css?v=5.1.3" media="print" id="printcss">
     <title>localhost / 127.0.0.1 | phpMyAdmin 5.1.3</title>
     <script data-cfasync="false" type="text/javascript" src="js/vendor/jquery/jquery.min.js?v=5.1.3"></script>
@@ -260,7 +260,7 @@ $(function() {
       </div>
       <div id="pma_navigation_tree" class="list_container synced highlight autoexpand">
 
-  <div class="pma_quick_warp"><div class="drop_list"><button title="Tablas recientes" class="drop_button btn">Reciente</button><ul id="pma_recent_list"><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=webfinalproyect&table=wallet">`webfinalproyect`.`wallet`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=webfinalproyect&table=usuario">`webfinalproyect`.`usuario`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=webfinalproyect&table=reuniones">`webfinalproyect`.`reuniones`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=webfinalproyect&table=proyectos_usuarios">`webfinalproyect`.`proyectos_usuarios`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=webfinalproyect&table=proyectos">`webfinalproyect`.`proyectos`</a></li></ul></div><div class="drop_list"><button title="Tablas favoritas" class="drop_button btn">Favoritas</button><ul id="pma_favorite_list"><li class="warp_link">No existen tablas favoritas.</li></ul></div><div class="clearfloat"></div></div>
+  <div class="pma_quick_warp"><div class="drop_list"><button title="Tablas recientes" class="drop_button btn">Reciente</button><ul id="pma_recent_list"><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=webfinalproyect&table=proyectos">`webfinalproyect`.`proyectos`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=webfinalproyect&table=wallet">`webfinalproyect`.`wallet`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=webfinalproyect&table=usuario">`webfinalproyect`.`usuario`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=webfinalproyect&table=reuniones">`webfinalproyect`.`reuniones`</a></li><li class="warp_link"><a href="index.php?route=/table/recent-favorite&db=webfinalproyect&table=proyectos_usuarios">`webfinalproyect`.`proyectos_usuarios`</a></li></ul></div><div class="drop_list"><button title="Tablas favoritas" class="drop_button btn">Favoritas</button><ul id="pma_favorite_list"><li class="warp_link">No existen tablas favoritas.</li></ul></div><div class="clearfloat"></div></div>
 
 <div class="clearfloat"></div>
 
