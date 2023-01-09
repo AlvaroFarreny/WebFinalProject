@@ -51,10 +51,7 @@ function attempt_login($numexpediente, $connection) {
 			//echo "Usuario no encontrado";
 			return false;
 		}
-	}
-	
-	
-	
+	}	
 ?>
 <?php
 
@@ -84,7 +81,7 @@ $found_user = attempt_login($numexpediente, $connection);
 $tipo=0;
 $tablename ="usuario";
 if ($found_user) {
-      header("Location: " . "login.html");	
+      header("Location: " . "login.php");	
 }
      
 else {
@@ -99,7 +96,7 @@ else {
 			$result = mysqli_query($connection, $query);
 
 			if ($result) {
-				header("Location: " . "index.html");	
+				header("Location: " . "./index2.php");	
 			} else {
 				die("Database query failed. " . mysqli_error($connection));
 	}

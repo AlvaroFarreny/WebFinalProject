@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
   BarraFija();
 });
@@ -56,6 +55,24 @@ function darkmode(iconID) {
   }
 };
 
+// FUNCION PARA OCULTAR EL BOTON DE LOGIN Y MOSTRAR EL AVATAR DE USUARIO
+function usuarioLogueado(){
+  // Ocultamos el botón de inicio de sesión
+  buttonlogin.style.display = 'none';
+      
+  // Mostramos el avatar del usuario
+  avatar.style.display = 'block';
+
+  // Cuando se haga clic en el avatar
+  avatar.addEventListener('click', () => {
+    // Redirigimos al usuario a su perfil
+    window.location.replace('profile.html');
+    // show the user's wallet address
+    showUserWalletAddress();
+    // get the user's wallet balance
+    getWalletBalance();
+  });
+};
 
 // FUNCION PARA INICIAR SESION EN LA WEB
 
@@ -72,22 +89,21 @@ window.addEventListener('load', () => {
   }
   // Si el usuario ha iniciado sesión
   if (loggedIn) {
-    // Ocultamos el botón de inicio de sesión
-    buttonlogin.style.display = 'none';
-    
-    // Mostramos el avatar del usuario
-    avatar.style.display = 'block';
+  // Ocultamos el botón de inicio de sesión
+  buttonlogin.style.display = 'none';
+      
+  // Mostramos el avatar del usuario
+  avatar.style.display = 'block';
 
-    // Cuando se haga clic en el avatar
-    avatar.addEventListener('click', () => {
-      // Redirigimos al usuario a su perfil
-      window.location.replace('profile.html');
-      // show the user's wallet address
-      showUserWalletAddress();
-      // get the user's wallet balance
-      getWalletBalance();
-
-    });
+  // Cuando se haga clic en el avatar
+  avatar.addEventListener('click', () => {
+    // Redirigimos al usuario a su perfil
+    window.location.replace('profile.html');
+    // show the user's wallet address
+    showUserWalletAddress();
+    // get the user's wallet balance
+    getWalletBalance();
+  });
   }
 });
 
@@ -122,8 +138,6 @@ const loginWithMetamask = async () => {
       // 5. show the user dashboard
       showUserDashboard();
 
-      
-
     } catch (error) {
       alert(error);
     }
@@ -156,7 +170,7 @@ const showUserDashboard = async () => {
     return false;
   }
 
-  window.location.href = "/index.html";
+  window.location.href = "./index2.php";
 
   //ESCONDEMOS EL MENU DE LOGIN
   buttonlogin.style.display = "none";
@@ -192,7 +206,7 @@ const logout = () => {
   loggedIn = false;
   window.localStorage.removeItem("loggedIn");
   
-  window.location.href = "/login.html";
+  window.location.href = "/login.php";
 };
 
 // when the user clicks the logout button run the logout function

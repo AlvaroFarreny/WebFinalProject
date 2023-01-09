@@ -18,6 +18,9 @@
   --degradado-botones: linear-gradient(to right, #ee8f00 0%, #ff531a 100%);
   --degradado-botones-hover: linear-gradient(to left, #ee8f00 0%, #ff531a 100%);
   --fondo-container-apuntame: white;
+
+  --mostrar-buttonlogin: block;
+  --mostrar-avatar: none;
 }
 
 :dicionario {
@@ -106,10 +109,11 @@ header {
 
 .perfil {
   color: transparent;
-  display: none;
+  display: var(--mostrar-avatar);
 }
 
 #buttonlogin {
+  display: var(--mostrar-buttonlogin);
   margin: -10px 0 0 5px;
   padding: 5px 19px;
   border-radius: 5px;
