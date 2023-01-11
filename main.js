@@ -29,7 +29,7 @@ function darkmode(iconID) {
       
     }, 900);
     document.getElementById(iconID).className = "fa-solid fa-sun";
-    document.getElementById("logonavbar").src="/img/logos/logo_uem_claro.png";
+    document.getElementById("logonavbar").src="./img/logos/logo_uem_claro.png";
     //dicionario de colores cambiado a darkmode
     r.style.setProperty('--footer-color', '#121212');
     r.style.setProperty('--header-color', '#121212');
@@ -37,6 +37,7 @@ function darkmode(iconID) {
     r.style.setProperty('--h1-color', 'rgb(219, 219, 219)');
     r.style.setProperty('--h2-color', 'rgb(219, 219, 219)');
     r.style.setProperty('--p-color', 'rgb(219, 219, 219)');
+    r.style.setProperty('--dark-color', '#121212');
     document.getElementById("botonDarkMode").firstChild.src = "images/darkMode0.png";
   
   } else {
@@ -44,7 +45,7 @@ function darkmode(iconID) {
       
     }, 900);
     document.getElementById(iconID).className = "fa-solid fa-moon";
-    document.getElementById("logonavbar").src="/img/logos/logo_uem_oscuro.png";
+    document.getElementById("logonavbar").src="./img/logos/logo_uem_oscuro.png";
     //dicionario de colores cambiado a light mode
     r.style.setProperty('--footer-color', 'white');
     r.style.setProperty('--header-color', 'white');
@@ -52,6 +53,7 @@ function darkmode(iconID) {
     r.style.setProperty('--h1-color', 'rgb(36, 36, 36)');
     r.style.setProperty('--h2-color', 'rgb(36, 36, 36)');
     r.style.setProperty('--p-color', 'rgb(36, 36, 36)');
+    r.style.setProperty('--dark-color', 'white');
   }
 };
 
@@ -66,7 +68,7 @@ function usuarioLogueado(){
   // Cuando se haga clic en el avatar
   avatar.addEventListener('click', () => {
     // Redirigimos al usuario a su perfil
-    window.location.replace('profile.html');
+    window.location.replace('profile.php');
     // show the user's wallet address
     showUserWalletAddress();
     // get the user's wallet balance
@@ -98,7 +100,7 @@ window.addEventListener('load', () => {
   // Cuando se haga clic en el avatar
   avatar.addEventListener('click', () => {
     // Redirigimos al usuario a su perfil
-    window.location.replace('profile.html');
+    window.location.replace('profile.php');
     // show the user's wallet address
     showUserWalletAddress();
     // get the user's wallet balance

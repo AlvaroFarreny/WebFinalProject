@@ -2,11 +2,7 @@
 <html>
 <?php
   session_start();
-if(isset($_SESSION['numexpediente'])){
-	header("Location: " . "./index2.php");
-}else {
-}
-?>
+  ?>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -32,14 +28,26 @@ if(isset($_SESSION['numexpediente'])){
                         <li><a href="#sobreNosotros">Nosotros</a></li>
                         <li><a href="#proyectos">Proyectos</a></li>
                         <li><a href="./login.php" id="buttonlogin">Login</a></li>
-                        <li class="perfil" id="avatar"><a href="./profile.html"><img src="img/avatar.svg"></a>Profile
+                        <li class="perfil" id="avatar"><a href="./profile.php"><img src="img/avatar.svg"></a>Profile
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
+    <?php
+        if(isset($_SESSION['numexpediente'])){
+            ?>
+        <script>
+            var buttonlogindisplay=document.getElementById("buttonlogin");
+            buttonlogindisplay.style.display="none";
+            var avatardisplay = document.getElementById("avatar");
+            avatardisplay.style.display="block"
+        </script>
+            <?php
+}else {
+}
+?>
     <style   style>:root {--dark-color: grey;}</style>
     <div class="container__cover" id="inicio">
         <div class="cover">

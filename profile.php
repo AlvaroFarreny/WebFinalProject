@@ -3,7 +3,7 @@
 <?php
   session_start();
 if(isset($_SESSION['numexpediente'])){
-	header("Location: " . "./index2.php");
+	
 }else {
 }
 ?>
@@ -49,7 +49,7 @@ if(isset($_SESSION['numexpediente'])){
             <div class="columns">
                 <div class="container_imagen">
                     <div class="imagen">
-                        <img src="/img/avatar.svg" alt="">
+                        <img src="img/avatar.svg" alt="avatar_img">
                     </div>
                     <div class="logout">
                         <button class="logout-btn">🔐 Log out</button>
