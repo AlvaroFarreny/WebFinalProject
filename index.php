@@ -120,8 +120,8 @@ session_start();
                             criptomonedas desde 0. El curso se basará en
                             tres etapas de aprendizaje y una vez se hayan superado las tres fases con éxito, se
                             procederá a la fase final o "Criptochallenge"...</p>
-                        <div id="sabermas"><a href="#register"><input type="button" id="sabermas" value="Saber más"></a></div>
-                        <div id="leermas"><a href="./bit2me.php"><input type="button" id="leermas" value="Leer más"></a></div>
+                        <a href="#register" id="sabermas"><input type="button" value="Saber más"></a>
+                        <a href="./bit2me.php" id="leermas"><input type="button" value="Leer más"></a>
                     </div>
                     <div class="parteimagen">
                         <img src="img/bit2me/bit2me.png" loading="lazy">
@@ -142,8 +142,8 @@ session_start();
                         <p class="item-text">El criptoclub este 2022 va a formar parte de dicha liga para competir
                             contra las mejores
                             universidades de España...</p>
-                        <div id="sabermas"><a href="#register"><input type="button" value="Saber más"></a></div>
-                        <div id="leermas"><a href="./ligadebolsa.php"><input type="button" value="Leer más"></a></div>
+                        <a href="#register" id="sabermas"><input type="button" value="Saber más"></a>
+                        <a href="./ligadebolsa.php" id="leermas"><input type="button" value="Leer más"></a>
                     </div>
                 </div>
             </div>
@@ -159,8 +159,8 @@ session_start();
                         <p class="item-text">Para ello se realizará una creación de una colección única de NFT's y su
                             posterior venta y comercialización. Con la colaboración
                             de los estudiantes del CriptoClub de la Universidad Europea...</p>
-                        <div id="sabermas"><a href="#register"><input type="button" value="Saber más"></a></div>
-                        <div id="leermas"><a href="./fundacioncamaro.php"><input type="button" value="Leer más"></a></div>
+                        <a href="#register" id="sabermas"><input type="button" value="Saber más"></a>
+                        <a href="./fundacioncamaro.php" id="leermas"><input type="button" value="Leer más"></a>
                     </div>
                     <div class="parteimagen">
                         <img src="img/antoniocamaro/antoniocamarologo.png" loading="lazy">
@@ -203,6 +203,18 @@ session_start();
             </form>
         </div>
     </section>
+    <?php
+    if (isset($_SESSION['numexpediente'])) {
+        ?>
+        <script>
+            var sabermasdisplay = document.getElementById("sabermas");
+            sabermasdisplay.style.display = "none"
+            var leermasdisplay = document.getElementById("leermas");
+            leermasdisplay.style.display = "block"
+        </script>
+        <?php
+    }
+    ?>
     <footer>
         <footer>
             <div class="footer">
