@@ -21,6 +21,9 @@
 
   --mostrar-buttonlogin: block;
   --mostrar-avatar: none;
+
+  --mostrar-sabermas: block;
+  --mostrar-leermas: none;
 }
 
 :dicionario {
@@ -678,4 +681,10 @@ footer {
 .social-media i:hover {
   color: var(--color-hover-enlaces);
   letter-spacing: 1.4px;
+}
+#sabermas{
+  display: var(--mostrar-sabermas);
+}
+#leermas{
+  display: var(--mostrar-leermas);
 }

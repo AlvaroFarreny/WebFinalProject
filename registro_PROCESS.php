@@ -1,3 +1,4 @@
+/*La base de datos no tiene atributos NOT NULL por lo que s ele pueden insertar usuarios vacios */
 <?php
 session_start();
 
@@ -18,15 +19,19 @@ if (isset($_SESSION['numexpediente'])) {
 			" (" . mysqli_connect_errno() . ")"
 		);
 	}
-
-	function find_user_by_username($numexpediente, $password, $connection)
+	?>
+	<?php
+	function find_user_by_username($numexpediente, $connection)
 	{
 
+
 		$safe_username = mysqli_real_escape_string($connection, $numexpediente);
-		$query = "SELECT password ";
+
+		$query = "SELECT * ";
 		$query .= "FROM usuario ";
 		$query .= "WHERE num_expediente = '$numexpediente'";
 		$query .= "LIMIT 1"; //Como username es primario no lo necesito
+
 		$user_set = mysqli_query($connection, $query);
 		if (!$user_set) {
 			die("Database query failed.");
@@ -39,11 +44,13 @@ if (isset($_SESSION['numexpediente'])) {
 		}
 	}
 
-	function attempt_login($numexpediente, $password, $connection)
+	function attempt_login($numexpediente, $connection)
 	{
-		$user = find_user_by_username($numexpediente, $password, $connection);
+		$user = find_user_by_username($numexpediente, $connection);
 		if ($user) {
+
 			//user encontrado
+
 			return $user;
 		} else {
 			// user not found
@@ -51,10 +58,24 @@ if (isset($_SESSION['numexpediente'])) {
 			return false;
 		}
 	}
+	?>
+	<?php
 
+	if (isset($_POST['nombre'])) {
+		// check if the username has been set
+		$nombre = $_POST["nombre"];
+	}
+	if (isset($_POST['apellidos'])) {
+		// check if the username has been set
+		$apellidos = $_POST["apellidos"];
+	}
 	if (isset($_POST['numexpediente'])) {
 		// check if the username has been set
 		$numexpediente = $_POST["numexpediente"];
+	}
+	if (isset($_POST['email'])) {
+		// check if the username has been set
+		$email = $_POST["email"];
 	}
 	if (isset($_POST['password'])) {
 		// check if the username has been set
@@ -62,23 +83,31 @@ if (isset($_SESSION['numexpediente'])) {
 	}
 
 
-	$found_user = attempt_login($numexpediente, $password, $connection);
-
+	$found_user = attempt_login($numexpediente, $connection);
+	$tipo = 0;
+	$tablename = "usuario";
 	if ($found_user) {
-		// Success
-		if (password_verify($password, $found_user["password"])) {
-			$_SESSION["numexpediente"] = $_POST['numexpediente'];
+		header("Location: " . "login.php");
+	} else {
+		//Encriptar password
+		$pass_s = password_hash($password, PASSWORD_DEFAULT);
+		$query = "INSERT INTO `$tablename` (";
+		$query .= "  `nombre`, `apellidos`,`num_expediente`, `email`,`password`";
+		$query .= ") VALUES (";
+		$query .= " '$nombre', '$apellidos', '$numexpediente', '$email', '$pass_s' ";
+		$query .= ")";
+
+		$result = mysqli_query($connection, $query);
+
+		if ($result) {
 			header("Location: " . "./index.php");
 		} else {
-			echo "La contraseña no es válida";
+			die("Database query failed. " . mysqli_error($connection));
 		}
-
-
-	} else {
-		// Failure
-		echo "El usuario no es válido";
 	}
+	?>
 
+	<?php
 	// 5. Close database connection
 	mysqli_close($connection);
 }
