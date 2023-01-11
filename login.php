@@ -3,7 +3,7 @@
 <?php
   session_start();
 if(isset($_SESSION['numexpediente'])){
-	header("Location: " . "./index2.php");
+	header("Location: " . "./index.php");
 }else {
 ?>
 <head>
@@ -24,16 +24,16 @@ if(isset($_SESSION['numexpediente'])){
     <header class="header">
         <div class="container__menu">
             <div class="logo">
-                <a href="./index2.php"><img src="img/logos/logo_uem_oscuro.png" alt=""></a>
+                <a href="./index.php"><img src="img/logos/logo_uem_oscuro.png" alt=""></a>
             </div>
             <div class="menu">
                 <nav>
                     <ul>
                         <li id="darkmode-login"><button><i id="icon1" onclick="darkmode('icon1')"
                                     class="fa-solid fa-moon"></i></button></li>
-                        <li><a href="./index2.php#inicio">Inicio</a></li>
-                        <li><a href="./index2.php#sobreNosotros">Nosotros</a></li>
-                        <li><a href="./index2.php#proyectos">Proyectos</a></li>
+                        <li><a href="./index.php#inicio">Inicio</a></li>
+                        <li><a href="./index.php#sobreNosotros">Nosotros</a></li>
+                        <li><a href="./index.php#proyectos">Proyectos</a></li>
                         <li class="perfil" id="avatar"><a href="./profile.php"><img src="img/avatar.svg"></a>Profile
                         </li>
                     </ul>
@@ -63,7 +63,7 @@ if(isset($_SESSION['numexpediente'])){
         </section>
         <section class="register">
             <div class="option"><a id="forgotpassw">¿Olvidaste tu contraseña?</a></div>
-            <div class="option"><a href="./index2.php#register">¿No tienes cuenta? Registrate</a></div>
+            <div class="option"><a href="./index.php#register">¿No tienes cuenta? Registrate</a></div>
 
         </section>
     </div>

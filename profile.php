@@ -27,16 +27,16 @@ if(isset($_SESSION['numexpediente'])){
     <header class="header">
         <div class="container__menu">
             <div class="logo">
-                <a href="./index2.php"><img src="img/logos/logo_uem_oscuro.png" alt=""></a>
+                <a href="./index.php"><img src="img/logos/logo_uem_oscuro.png" alt=""></a>
             </div>
             <div class="menu">
                 <nav>
                     <ul>
                         <li><button><i id="icon1" onclick="darkmode('icon1')" class="fa-solid fa-moon"></i></button>
                         </li>
-                        <li><a href="./index2.php#inicio">Inicio</a></li>
-                        <li><a href="./index2.php#sobreNosotros">Nosotros</a></li>
-                        <li><a href="./index2.php#proyectos">Proyectos</a></li>
+                        <li><a href="./index.php#inicio">Inicio</a></li>
+                        <li><a href="./index.php#sobreNosotros">Nosotros</a></li>
+                        <li><a href="./index.php#proyectos">Proyectos</a></li>
                         <li class="perfil" id="avatar"><a href=""><img src="img/avatar.svg"></a>Profile</li>
                     </ul>
                 </nav>
@@ -52,6 +52,7 @@ if(isset($_SESSION['numexpediente'])){
                         <img src="img/avatar.svg" alt="avatar_img">
                     </div>
                     <div class="logout">
+                        <button class="logout-btn-exp">Cerrar Sesion</button>
                         <button class="logout-btn">🔐 Log out</button>
                     </div>
                 </div>

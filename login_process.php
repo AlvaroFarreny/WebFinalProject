@@ -2,12 +2,12 @@
 session_start();
 
 if(isset($_SESSION['numexpediente'])){
-	header("Location: " . "./index2.php");
+	header("Location: " . "./index.php");
 }else {
 	define("DB_SERVER", "localhost");
 	define("DB_USER", "root");
 	define("DB_PASS", "");
-	define("DB_NAME", "webfinalproyect");
+	define("DB_NAME", "webfinalproject");
 
 	// 1. Crear conexión con la BBDD
 	$connection = mysqli_connect(DB_SERVER, DB_USER, DB_PASS, DB_NAME);
@@ -26,7 +26,6 @@ if(isset($_SESSION['numexpediente'])){
 			$query .= "FROM usuario ";
 			$query .= "WHERE num_expediente = '$numexpediente'";
 			$query .= "LIMIT 1";  //Como username es primario no lo necesito
-			echo "$query <br>";
 			$user_set = mysqli_query($connection, $query);
 			if (!$user_set) {
 				die("Database query failed.");
@@ -68,7 +67,7 @@ if(isset($_SESSION['numexpediente'])){
 	// Success
 			if(password_verify($password,$found_user["password"])){
 			$_SESSION["numexpediente"] = $_POST['numexpediente'];
-				header("Location: " . "./index2.php");
+				header("Location: " . "./index.php");
 			}
 			else{
 				echo "La contraseña no es válida";

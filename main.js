@@ -1,6 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
   BarraFija();
 });
+//Boton de Profile.php para cerrar sesión de numero de expediente
+function cerrar_sesion(){
+  window.location.href = "./cerrar_sesion.php";
+}
+document.querySelector(".logout-btn-exp").addEventListener("click", cerrar_sesion);
 
 // Cambiar barra de navegacion y circulo al bajar
 function BarraFija() {
@@ -172,7 +177,7 @@ const showUserDashboard = async () => {
     return false;
   }
 
-  window.location.href = "./index2.php";
+  window.location.href = "./index.php";
 
   //ESCONDEMOS EL MENU DE LOGIN
   buttonlogin.style.display = "none";
@@ -208,7 +213,7 @@ const logout = () => {
   loggedIn = false;
   window.localStorage.removeItem("loggedIn");
   
-  window.location.href = "/login.php";
+  window.location.href = "./index.php";
 };
 
 // when the user clicks the logout button run the logout function
