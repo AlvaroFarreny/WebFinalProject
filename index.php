@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
 <?php
-session_start();
-?>
-
+  session_start();
+  ?>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -14,7 +13,7 @@ session_start();
     <link rel="shortcut icon" href="img/logos/favicon-32x32.png">
 </head>
 
-<body>
+<body>  
     <header class="header">
         <div class="container__menu">
             <div class="logo">
@@ -37,26 +36,18 @@ session_start();
         </div>
     </header>
     <?php
-    if (isset($_SESSION['numexpediente'])) {
-        ?>
-        <script>
-            var buttonlogindisplay = document.getElementById("buttonlogin");
-            buttonlogindisplay.style.display = "none";
-            var avatardisplay = document.getElementById("avatar");
-            avatardisplay.style.display = "block"
-            var sabermasdisplay = document.getElementById("sabermas");
-            sabermasdisplay.style.display = "none"
-            var leermasdisplay = document.getElementById("leermas");
-            leermasdisplay.style.display = "block"
-        </script>
-        <?php
-    }
+    if(isset($_SESSION['numexpediente'])){
     ?>
-    <style style>
-        :root {
-            --dark-color: grey;
-        }
-    </style>
+        <script>
+            var buttonlogindisplay=document.getElementById("buttonlogin");
+            buttonlogindisplay.style.display="none";
+            var avatardisplay = document.getElementById("avatar");
+            avatardisplay.style.display="block"
+        </script>
+            <?php
+    }
+?>
+    <style   style>:root {--dark-color: grey;}</style>
     <div class="container__cover" id="inicio">
         <div class="cover">
             <div class="text">
@@ -86,20 +77,17 @@ session_start();
                 <div class="item-nosotros">
                     <img class="img-nosotros" src="img/problem-solving.svg" height="300px" width="300px">
                     <h3 class="titulos-h3">Problem Solving</h3>
-                    <p class="centrar-p">Intentamos buscar soluciones en blockchain para problemas cuotidianos del dia
-                        dia.</p>
+                    <p class="centrar-p">Intentamos buscar soluciones en blockchain para problemas cuotidianos del dia dia.</p>
                 </div>
                 <div class="item-nosotros">
                     <img class="img-nosotros" src="img/networking-illustration.svg" height="300px" width="300px">
                     <h3 class="titulos-h3">Networking</h3>
-                    <p class="centrar-p">Al ser un club que trata un tema tan actual, existe gente de todas las
-                        titulaciones de la unviersidad. </p>
+                    <p class="centrar-p">Al ser un club que trata un tema tan actual, existe gente de todas las titulaciones de la unviersidad. </p>
                 </div>
                 <div class="item-nosotros">
                     <img class="img-nosotros" src="img/social-event.svg" height="300px" width="300px">
                     <h3 class="titulos-h3">Social Events</h3>
-                    <p class="centrar-p">Cada mes se organizan reuniones del club para tratar los temas mas relevantes
-                        ademas de traer ponentes importantes del mundo cripto.</p>
+                    <p class="centrar-p">Cada mes se organizan reuniones del club para tratar los temas mas relevantes ademas de traer ponentes importantes del mundo cripto.</p>
                 </div>
             </div>
         </div>
@@ -120,8 +108,8 @@ session_start();
                             criptomonedas desde 0. El curso se basará en
                             tres etapas de aprendizaje y una vez se hayan superado las tres fases con éxito, se
                             procederá a la fase final o "Criptochallenge"...</p>
-                        <div id="sabermas"><a href="#register"><input type="button" id="sabermas" value="Saber más"></a></div>
-                        <div id="leermas"><a href="./bit2me.php"><input type="button" id="leermas" value="Leer más"></a></div>
+                        <a href="bit2me.html"><input type="button" value="Saber más"></a>
+                        <a href="bit2me.html"><input type="button" value="Leer más"></a>
                     </div>
                     <div class="parteimagen">
                         <img src="img/bit2me/bit2me.png" loading="lazy">
@@ -142,8 +130,8 @@ session_start();
                         <p class="item-text">El criptoclub este 2022 va a formar parte de dicha liga para competir
                             contra las mejores
                             universidades de España...</p>
-                        <div id="sabermas"><a href="#register"><input type="button" value="Saber más"></a></div>
-                        <div id="leermas"><a href="./ligadebolsa.php"><input type="button" value="Leer más"></a></div>
+                        <a href="ligabolsa.html"><input type="button" value="Saber más"></a>
+                        <a href="ligabolsa.html"><input type="button" value="Leer más"></a>
                     </div>
                 </div>
             </div>
@@ -159,8 +147,8 @@ session_start();
                         <p class="item-text">Para ello se realizará una creación de una colección única de NFT's y su
                             posterior venta y comercialización. Con la colaboración
                             de los estudiantes del CriptoClub de la Universidad Europea...</p>
-                        <div id="sabermas"><a href="#register"><input type="button" value="Saber más"></a></div>
-                        <div id="leermas"><a href="./fundacioncamaro.php"><input type="button" value="Leer más"></a></div>
+                        <a href="fundacioncamaro.html"><input type="button" value="Saber más"></a>
+                        <a href="fundacioncamaro.html"><input type="button" value="Leer más"></a>
                     </div>
                     <div class="parteimagen">
                         <img src="img/antoniocamaro/antoniocamarologo.png" loading="lazy">
@@ -208,10 +196,8 @@ session_start();
             <div class="footer">
                 <div class="social-media">
                     <button><a href=""><i class="fa-brands fa-twitter"></i></a></button>
-                    <button><a href="https://www.instagram.com/criptoclubuem/"><i
-                                class="fa-brands fa-instagram"></i></a></button>
-                    <button><a href="https://www.linkedin.com/company/criptoclub/"><i
-                                class="fa-brands fa-linkedin"></i></a></button>
+                    <button><a href="https://www.instagram.com/criptoclubuem/"><i class="fa-brands fa-instagram"></i></a></button>
+                    <button><a href="https://www.linkedin.com/company/criptoclub/"><i class="fa-brands fa-linkedin"></i></a></button>
                 </div>
             </div>
             <div class="copyright">

@@ -1,47 +1,12 @@
 <!DOCTYPE html>
 <html>
 <?php
-session_start();
-
-if (isset($_SESSION['numexpediente'])) {
-    //Datos para la conexión
-    $dbhost = "localhost"; //IP del servidor de BBDD
-    $dbuser = "root"; // Usuario de la BBDD
-    $dbpass = ""; // Contraseña
-    $dbname = "webfinalproject"; // Nombre de la Base de Datos
-    $tablename = "reuniones"; // Nombre de la tabla 
-
-    $connection = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
-    // Test if connection succeeded
-    if (mysqli_connect_errno()) {
-        die("Database connection failed: " .
-            mysqli_connect_error() .
-            " (" . mysqli_connect_errno() . ")"
-        );
-    }
-    $query = "SELECT * FROM `$tablename` ORDER BY fecha_hora ASC LIMIT 3;";
-    $result = mysqli_query($connection, $query);
-    if ($result) {
-        $_SESSION['result'] = $result;
-    } else { // Failure
-        die("Database query failed. " . mysqli_error($connection));
-    }
-    $tablename = "usuario";
-    $query = "SELECT nombre,apellidos FROM `$tablename` WHERE num_expediente=" . $_SESSION['numexpediente'] . " LIMIT 1;";
-    $result2 = mysqli_query($connection, $query);
-    $datos = mysqli_fetch_assoc($result2);
-    if ($datos) {
-        $nombre = $datos["nombre"];
-        $apellidos = $datos["apellidos"];
-    } else { // Failure
-        die("Database query failed. " . mysqli_error($connection));
-    }
-    mysqli_close($connection);
-} else {
-    header("Location: " . "./index.php");
+  session_start();
+if(isset($_SESSION['numexpediente'])){
+	
+}else {
 }
 ?>
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -55,7 +20,7 @@ if (isset($_SESSION['numexpediente'])) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.1/web3.min.js"
         integrity="sha512-GKw4QT/RccGJIwQxY3MhyiQ5pHrhQ8SuKFEafV+WcpOvtz7iYFQuQGFCvmGlHLctJTe8KrWU1FqvF7VOkEAJtw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
+    </script>
 </head>
 
 <body>
@@ -79,73 +44,68 @@ if (isset($_SESSION['numexpediente'])) {
         </div>
     </header>
     <center>
-        <section class="section__profile">
-            <div class="container-profile">
-                <div class="columns">
-                    <div class="container_imagen">
-                        <div class="imagen">
-                            <img src="img/avatar.svg" alt="avatar_img">
-                        </div>
-                        <div class="logout">
-                            <button class="logout-btn-exp">Cerrar Sesión</button>
-                            <button class="logout-btn">🔐 Log out</button>
-                        </div>
+    <section class="section__profile">
+        <div class="container-profile">
+            <div class="columns">
+                <div class="container_imagen">
+                    <div class="imagen">
+                        <img src="img/avatar.svg" alt="avatar_img">
                     </div>
-                    <div class="container_info">
-                        <div class="datos-usuario">
-                            <h2>
-                                <?php echo $nombre . " " . $apellidos; ?>
-                            </h2>
-                            <section class="dashboard-section">
-                                <h3 class="wallet-status">Wallet Connected! </h3>
-                                <h4 class="wallet-address-heading">
-                                    <span class="wallet-address">0x2Cc6F65847EC39F87E25620A036A3829B6835F26</span>
-                                </h4>
-                                <h4 class="wallet-balance-heading">
-                                    <span class="wallet-balance">Balance: 2 Ether</span>
-                                </h4>
-                            </section>
-                        </div>
-                        <center>
-                            <div class="container_calendar">
-                                <h3>Próximas reuniones</h3>
-                                <table class="tabla">
-                                    <tr>
-                                        <th>Fecha</th>
-                                        <th>Aula</th>
-                                        <th>Asunto</th>
-                                        <th>Ponente</th>
-                                    </tr>
-                                    <?php
-                                    $result = $_SESSION['result'];
-                                    if ($result->num_rows > 0) {
-                                        while ($row = $result->fetch_assoc()) {
-                                            echo
-                                                "<tr>
-                                        <td>" . $row["fecha_hora"] . "</td>
-                                        <td>" . $row["aula"] . "</td>
-                                        <td>" . $row["asunto"] . "</td>
-                                        <td>" . $row["ponente"] . "</td>
-                                    </tr>";
-                                        }
-                                    } else {
-                                        echo "0 results";
-                                    }
-                                    ?>
-                                </table>
-                            </div>
-                        </center>
+                    <div class="logout">
+                        <button class="logout-btn-exp">Cerrar Sesion</button>
+                        <button class="logout-btn">🔐 Log out</button>
                     </div>
                 </div>
+                <div class="container_info">
+                    <div class="datos-usuario">
+                        <h2>Nombre Prueba</h2>
+                        <section class="dashboard-section">
+                            <h3 class="wallet-status">Wallet Connected! 🤝</h3>
+                            <h4 class="wallet-address-heading">
+                                ETH Wallet Address:
+                                <span class="wallet-address">0x2Cc6F65847EC39F87E25620A036A3829B6835F26</span>
+                            </h4>
+                            <h4 class="wallet-balance-heading">
+                                <span class="wallet-balance">Balance:  2 Ether</span>
+                            </h4>
+                        </section>
+                    </div>
+                    <center>
+                    <div class="container_calendar">
+                        <h3>Próximas reuniones</h3>
+                        <table class="tabla">
+                            <tr>
+                                <th>Dia</th>
+                                <th>Aula</th>
+                                <th>Tema</th>
+                            </tr>
+                            <tr>
+                                <td>5/11/2022</td>
+                                <td>Primera reunion</td>
+                                <td>E221</td>
+                            </tr>
+                            <tr class="activo">
+                                <td>15/12/2022</td>
+                                <td>Primera sesion trading</td>
+                                <td>E221</td>
+                            </tr>
+                            <tr>
+                                <td>23/1/2023</td>
+                                <td>Bit2me reunion</td>
+                                <td>...</td>
+                            </tr>
+                        </table>
+                    </div></center>
+                </div>
+            </div>
 
-        </section>
-    </center>
+    </section>   
+    </center>       
     <footer>
         <div class="footer">
             <div class="social-media">
                 <button><a href=""><i class="fa-brands fa-twitter"></i></a></button>
-                <button><a href="https://www.instagram.com/criptoclubuem/"><i
-                            class="fa-brands fa-instagram"></i></a></button>
+                <button><a href="https://www.instagram.com/criptoclubuem/"><i class="fa-brands fa-instagram"></i></a></button>
                 <button><a href="https://www.linkedin.com/company/criptoclub/"><i
                             class="fa-brands fa-linkedin"></i></a></button>
             </div>
