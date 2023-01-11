@@ -302,7 +302,6 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (min-widht:700px) {}
 
 .minitexto {
   color: var(--h3-color);
@@ -699,4 +698,14 @@ footer {
 }
 #leermas3{
   display: var(--mostrar-leermas);
+}
+
+@media (max-width: 1000px) {
+  .svg{
+    display:none;
+  }
+  .container__cover{
+    background-image:none;
+  }
+
 }
