@@ -115,7 +115,6 @@ header {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.tabla tbody {}
 
 .tabla thead tr {
   background-color: #009879;
@@ -140,7 +139,19 @@ header {
   color: #009879;
 }
 
+.logout-btn-exp {
+  color: white;
+  background: #cc0000;
+  padding: 10px 30px;
+  font-size: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 40px;
+}
+
 .logout-btn {
+  display: none;
   color: white;
   background: #cc0000;
   padding: 10px 30px;
@@ -217,4 +228,8 @@ footer {
 .social-media i:hover {
   color: var(--color-hover-enlaces);
   letter-spacing: 1.4px;
+}
+
+.dashboard-section{
+  display: none;
 }
