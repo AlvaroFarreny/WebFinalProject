@@ -43,6 +43,7 @@ function darkmode(iconID) {
     r.style.setProperty('--h2-color', 'rgb(219, 219, 219)');
     r.style.setProperty('--p-color', 'rgb(219, 219, 219)');
     r.style.setProperty('--dark-color', '#121212');
+    r.style.setProperty('--fondo-container-apuntame', '#121212');
     document.getElementById("botonDarkMode").firstChild.src = "images/darkMode0.png";
   
   } else {
@@ -59,6 +60,7 @@ function darkmode(iconID) {
     r.style.setProperty('--h2-color', 'rgb(36, 36, 36)');
     r.style.setProperty('--p-color', 'rgb(36, 36, 36)');
     r.style.setProperty('--dark-color', 'white');
+    r.style.setProperty('--fondo-container-apuntame', 'white');
   }
 };
 
@@ -68,7 +70,7 @@ function usuarioLogueado(){
   buttonlogin.style.display = 'none';
       
   // Mostramos el avatar del usuario
-  avatar.style.display = 'block';
+  avatar.style.display = 'flex';
 
   // Cuando se haga clic en el avatar
   avatar.addEventListener('click', () => {
