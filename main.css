@@ -706,6 +706,38 @@ footer {
   }
   .container__cover{
     background-image:none;
+    display:flex;
+    background: var(--degradado-rojo);
+  }
+
+  .container__cover .text h1 {
+    color:white;
+  }
+
+  .container__cover .text p {
+    color:white;
+  }
+
+  .container__cover .text input {
+    align-self: center;
+  }
+
+  .columnas-nosotros{
+    display:block;
+  }
+
+  .item-nosotros{
+    padding: 10px;
+  }
+
+  .item{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+  }
+  .item .parteimagen{
+    display: none;
+  
   }
 
 }
