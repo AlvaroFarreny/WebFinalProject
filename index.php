@@ -3,7 +3,6 @@
 <?php
 session_start();
 ?>
-
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -44,10 +43,6 @@ session_start();
             buttonlogindisplay.style.display = "none";
             var avatardisplay = document.getElementById("avatar");
             avatardisplay.style.display = "block"
-            var sabermasdisplay = document.getElementById("sabermas");
-            sabermasdisplay.style.display = "none"
-            var leermasdisplay = document.getElementById("leermas");
-            leermasdisplay.style.display = "block"
         </script>
         <?php
     }
@@ -120,8 +115,8 @@ session_start();
                             criptomonedas desde 0. El curso se basará en
                             tres etapas de aprendizaje y una vez se hayan superado las tres fases con éxito, se
                             procederá a la fase final o "Criptochallenge"...</p>
-                        <a href="#register" id="sabermas"><input type="button" value="Saber más"></a>
-                        <a href="./bit2me.php" id="leermas"><input type="button" value="Leer más"></a>
+                        <a href="#register" id="sabermas1"><input type="button" value="Saber más"></a>
+                        <a href="./bit2me.php" id="leermas1"><input type="button" value="Leer más"></a>
                     </div>
                     <div class="parteimagen">
                         <img src="img/bit2me/bit2me.png" loading="lazy">
@@ -142,8 +137,8 @@ session_start();
                         <p class="item-text">El criptoclub este 2022 va a formar parte de dicha liga para competir
                             contra las mejores
                             universidades de España...</p>
-                        <a href="#register" id="sabermas"><input type="button" value="Saber más"></a>
-                        <a href="./ligadebolsa.php" id="leermas"><input type="button" value="Leer más"></a>
+                        <a href="#register" id="sabermas2"><input type="button" value="Saber más"></a>
+                        <a href="./ligabolsa.php" id="leermas2"><input type="button" value="Leer más"></a>
                     </div>
                 </div>
             </div>
@@ -159,8 +154,8 @@ session_start();
                         <p class="item-text">Para ello se realizará una creación de una colección única de NFT's y su
                             posterior venta y comercialización. Con la colaboración
                             de los estudiantes del CriptoClub de la Universidad Europea...</p>
-                        <a href="#register" id="sabermas"><input type="button" value="Saber más"></a>
-                        <a href="./fundacioncamaro.php" id="leermas"><input type="button" value="Leer más"></a>
+                        <a href="#register" id="sabermas3"><input type="button" value="Saber más"></a>
+                        <a href="./fundacioncamaro.php" id="leermas3"><input type="button" value="Leer más"></a>
                     </div>
                     <div class="parteimagen">
                         <img src="img/antoniocamaro/antoniocamarologo.png" loading="lazy">
@@ -207,10 +202,19 @@ session_start();
     if (isset($_SESSION['numexpediente'])) {
         ?>
         <script>
-            var sabermasdisplay = document.getElementById("sabermas");
-            sabermasdisplay.style.display = "none"
-            var leermasdisplay = document.getElementById("leermas");
-            leermasdisplay.style.display = "block"
+            var sabermasdisplay1 = document.getElementById("sabermas1");
+            sabermasdisplay1.style.display = "none"
+            var sabermasdisplay2 = document.getElementById("sabermas2");
+            sabermasdisplay2.style.display = "none"
+            var sabermasdisplay3 = document.getElementById("sabermas3");
+            sabermasdisplay3.style.display = "none"
+            var leermasdisplay1 = document.getElementById("leermas1");
+            leermasdisplay1.style.display = "block"
+            var leermasdisplay2 = document.getElementById("leermas2");
+            leermasdisplay2.style.display = "block"
+            var leermasdisplay3 = document.getElementById("leermas3");
+            leermasdisplay3.style.display = "block"
+            
         </script>
         <?php
     }

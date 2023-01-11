@@ -42,7 +42,7 @@ if(isset($_SESSION['numexpediente'])){
         </div>
     </header>
     <div class="container-login">
-        <form action="login_process.php" method="post">
+        <form action="login_PROCESS.php" method="post">
             <div class="title">Login</div>
             <div class="input-box underline">
                 <input type="text" name="numexpediente" placeholder="Número de expediente" required>

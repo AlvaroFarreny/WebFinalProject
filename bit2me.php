@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-    
+<?php
+session_start();
+?>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -31,6 +33,18 @@
             </div>
         </div>
     </header>
+    <?php
+    if (isset($_SESSION['numexpediente'])) {
+        ?>
+        <script>
+            var buttonlogindisplay = document.getElementById("buttonlogin");
+            buttonlogindisplay.style.display = "none";
+            var avatardisplay = document.getElementById("avatar");
+            avatardisplay.style.display = "block"
+        </script>
+        <?php
+    }
+    ?>
     <div class="inicioBit2me">
         <div class="container_inicio">
             <div class="astronauta">

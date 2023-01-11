@@ -682,9 +682,21 @@ footer {
   color: var(--color-hover-enlaces);
   letter-spacing: 1.4px;
 }
-#sabermas{
+#sabermas1{
   display: var(--mostrar-sabermas);
 }
-#leermas{
+#leermas1{
+  display: var(--mostrar-leermas);
+}
+#sabermas2{
+  display: var(--mostrar-sabermas);
+}
+#leermas2{
+  display: var(--mostrar-leermas);
+}
+#sabermas3{
+  display: var(--mostrar-sabermas);
+}
+#leermas3{
   display: var(--mostrar-leermas);
 }
