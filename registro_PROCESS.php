@@ -1,5 +1,5 @@
-/*La base de datos no tiene atributos NOT NULL por lo que s ele pueden insertar usuarios vacios */
 <?php
+/*La base de datos no tiene atributos NOT NULL por lo que se pueden insertar usuarios vacios */
 session_start();
 
 if (isset($_SESSION['numexpediente'])) {
@@ -19,15 +19,10 @@ if (isset($_SESSION['numexpediente'])) {
 			" (" . mysqli_connect_errno() . ")"
 		);
 	}
-	?>
-	<?php
-	function find_user_by_username($numexpediente, $connection)
-	{
 
-
+	function find_user_by_username($numexpediente, $connection){
 		$safe_username = mysqli_real_escape_string($connection, $numexpediente);
-
-		$query = "SELECT * ";
+		$query = "SELECT num_expediente ";
 		$query .= "FROM usuario ";
 		$query .= "WHERE num_expediente = '$numexpediente'";
 		$query .= "LIMIT 1"; //Como username es primario no lo necesito
@@ -36,7 +31,6 @@ if (isset($_SESSION['numexpediente'])) {
 		if (!$user_set) {
 			die("Database query failed.");
 		}
-
 		if ($user = mysqli_fetch_assoc($user_set)) {
 			return $user;
 		} else {
@@ -44,13 +38,10 @@ if (isset($_SESSION['numexpediente'])) {
 		}
 	}
 
-	function attempt_login($numexpediente, $connection)
-	{
+	function attempt_login($numexpediente, $connection){
 		$user = find_user_by_username($numexpediente, $connection);
 		if ($user) {
-
 			//user encontrado
-
 			return $user;
 		} else {
 			// user not found
@@ -58,36 +49,54 @@ if (isset($_SESSION['numexpediente'])) {
 			return false;
 		}
 	}
-	?>
-	<?php
 
 	if (isset($_POST['nombre'])) {
-		// check if the username has been set
+		
 		$nombre = $_POST["nombre"];
 	}
 	if (isset($_POST['apellidos'])) {
-		// check if the username has been set
+		
 		$apellidos = $_POST["apellidos"];
 	}
 	if (isset($_POST['numexpediente'])) {
-		// check if the username has been set
+		
 		$numexpediente = $_POST["numexpediente"];
+		$pattern = "/^[0-9]{8}$/";
+		if (preg_match($pattern, $numexpediente)) {
+			// El número de expediente es válido
+		}else{
+			// El número de expediente no es válido
+			echo'<script type="text/javascript">
+        			alert("El número de expediente no es válido, por favor ingresa un numero de 8 digitos.");
+					window.location.href="login.php#register";
+        		</script>';
+		}
 	}
 	if (isset($_POST['email'])) {
-		// check if the username has been set
+		
 		$email = $_POST["email"];
+		if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			
+		}else{
+			// La dirección de correo electrónico no es válida, cumple con los estandares, como por ejemplo que tenga un arroba y un dominio válido.
+			echo'<script type="text/javascript">
+        			alert("La dirección de correo electrónico no es válida, no cumple con los estándares.");
+					window.location.href="login.php#register";
+        		</script>';
+		}
 	}
 	if (isset($_POST['password'])) {
-		// check if the username has been set
+		
 		$password = $_POST["password"];
 	}
 
-
 	$found_user = attempt_login($numexpediente, $connection);
-	$tipo = 0;
 	$tablename = "usuario";
 	if ($found_user) {
-		header("Location: " . "login.php");
+		echo'<script type="text/javascript">
+        			alert("El numero de expediente que has introducido ya existe. Si crees que es un fallo contacta con algun organizador del club.");
+					window.location.href="login.php";
+        		</script>';
 	} else {
 		//Encriptar password
 		$pass_s = password_hash($password, PASSWORD_DEFAULT);
@@ -105,9 +114,6 @@ if (isset($_SESSION['numexpediente'])) {
 			die("Database query failed. " . mysqli_error($connection));
 		}
 	}
-	?>
-
-	<?php
 	// 5. Close database connection
 	mysqli_close($connection);
 }

@@ -107,14 +107,8 @@ body {
   background: linear-gradient(to left, #99004d 0%, #ff0080 100%);
 }
 
-.recordar-passw .option {
-  font-size: 14px;
-  text-align: center;
-}
-
-
-
 .container-login {
+  display: block;
   margin-top: 100px;
   background: #fff;
   max-width: 350px;

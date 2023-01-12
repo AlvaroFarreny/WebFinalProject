@@ -45,7 +45,7 @@ if(isset($_SESSION['numexpediente'])){
         <form action="login_PROCESS.php" method="post">
             <div class="title">Login</div>
             <div class="input-box underline">
-                <input type="text" name="numexpediente" placeholder="Número de expediente" required>
+                <input type="text" name="numexpediente" placeholder="Número de expediente" maxlength="8" required>
                 <div class="underline"></div>
             </div>
             <div class="input-box">
@@ -62,12 +62,11 @@ if(isset($_SESSION['numexpediente'])){
                 <button class="login-btn">🔓 Entrar con Metamask</button>
         </section>
         <section class="register">
-            <div class="option"><a id="forgotpassw">¿Olvidaste tu contraseña?</a></div>
+            <div class="option"><a href="" class="forgotpassw">¿Olvidaste tu contraseña?</a></div>
             <div class="option"><a href="./index.php#register">¿No tienes cuenta? Registrate</a></div>
 
         </section>
     </div>
-    <section class="recordar-contraseña-login">
         <div class="recordar-passw">
             <form action="#">
                 <div class="title">Recordar Contraseña</div>
@@ -80,7 +79,6 @@ if(isset($_SESSION['numexpediente'])){
                 </div>
             </form>
         </div>
-    </section>
     <section class="dashboard-section">
         <h2 class="wallet-status">Wallet Connected! 🤝</h2>
         <h3 class="wallet-address-heading">
@@ -94,7 +92,7 @@ if(isset($_SESSION['numexpediente'])){
         <button class="logout-btn">🔐 Log out</button>
     </section>
 </body>
-<script src="/main.js"></script>
+<script src="main.js"></script>
 <?php
 }
 ?>

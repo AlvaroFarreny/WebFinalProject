@@ -17,10 +17,11 @@ function BarraFija() {
 };
 
 
-document.getElementById("forgotpassw").addEventListener("click", function(){
-  document.getElementsByClassName("container-login")[0].style.display = "none";
-  document.getElementsByClassName("recordar-passw")[0].style.display = "block";
+document.querySelector(".forgotpassw").addEventListener("click", function(){
+  document.getElementsByClassName("container-login").style.display = "none";
+  document.getElementsByClassName("recordar-passw").style.display = "block";
 });
+
 
 
 //funcion DARK MODE

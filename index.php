@@ -177,7 +177,7 @@ session_start();
                     <div class="underline"></div>
                 </div>
                 <div class="input-box underline">
-                    <input type="text" name="numexpediente" placeholder="Número de expediente" required>
+                    <input type="text" name="numexpediente" placeholder="Número de expediente" maxlength="8" required>
                     <div class="underline"></div>
                 </div>
                 <div class="input-box underline">
