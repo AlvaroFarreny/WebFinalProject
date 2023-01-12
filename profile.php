@@ -72,7 +72,7 @@ if (isset($_SESSION['numexpediente'])) {
                         <li><a href="./index.php#inicio">Inicio</a></li>
                         <li><a href="./index.php#sobreNosotros">Nosotros</a></li>
                         <li><a href="./index.php#proyectos">Proyectos</a></li>
-                        <li class="perfil" id="avatar"><a href=""><img src="img/avatar.svg"></a>P</li>
+                        <li class="perfil" id="avatar"><a href=""><img src="img/user.png" style="height: 40px;"></a>P</li>
                     </ul>
                 </nav>
             </div>
@@ -82,15 +82,6 @@ if (isset($_SESSION['numexpediente'])) {
         <section class="section__profile">
             <div class="container-profile">
                 <div class="columns">
-                    <div class="container_imagen">
-                        <div class="imagen">
-                            <img src="img/avatar.svg" alt="avatar_img">
-                        </div>
-                        <div class="logout">
-                            <button class="logout-btn-exp">Cerrar Sesión</button>
-                            <button class="logout-btn">🔐 Log out</button>
-                        </div>
-                    </div>
                     <div class="container_info">
                         <div class="datos-usuario">
                             <h2>
@@ -106,9 +97,8 @@ if (isset($_SESSION['numexpediente'])) {
                                 </h4>
                             </section>
                         </div>
-                        <center>
-                            <div class="container_calendar">
-                                <h3>Próximas reuniones</h3>
+                        <h3>Próximas reuniones</h3>
+                        <div class="container_calendar" style="overflow-x:auto;">
                                 <table class="tabla">
                                     <tr>
                                         <th>Fecha</th>
@@ -132,9 +122,12 @@ if (isset($_SESSION['numexpediente'])) {
                                         echo "0 results";
                                     }
                                     ?>
-                                </table>
-                            </div>
-                        </center>
+                            </table>
+                        </div>
+                        <div class="logout">
+                            <button class="logout-btn-exp">Cerrar Sesión</button>
+                            <button class="logout-btn">🔐 Log out</button>
+                        </div>
                     </div>
                 </div>
 

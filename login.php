@@ -34,7 +34,7 @@ if(isset($_SESSION['numexpediente'])){
                         <li><a href="./index.php#inicio">Inicio</a></li>
                         <li><a href="./index.php#sobreNosotros">Nosotros</a></li>
                         <li><a href="./index.php#proyectos">Proyectos</a></li>
-                        <li class="perfil" id="avatar"><a href="./profile.php"><img src="img/avatar.svg"></a>Profile
+                        <li class="perfil" id="avatar"><a href="./profile.php"><img src="img/user.png" style="height: 40px;"></a>Profile
                         </li>
                     </ul>
                 </nav>
