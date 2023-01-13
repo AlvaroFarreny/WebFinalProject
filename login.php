@@ -62,7 +62,7 @@ if(isset($_SESSION['numexpediente'])){
                 <button class="login-btn">🔓 Entrar con Metamask</button>
         </section>
         <section class="register">
-            <div class="option"><a href="" class="forgotpassw">¿Olvidaste tu contraseña?</a></div>
+            <div class="option"><button class="btnforgotpassw" onclick="forgotpassw()">¿Olvidaste tu contraseña?</button></div>
             <div class="option"><a href="./index.php#register">¿No tienes cuenta? Registrate</a></div>
 
         </section>

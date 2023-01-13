@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   BarraFija();
 });
 //Boton de Profile.php para cerrar sesión de numero de expediente
-function cerrar_sesion(){
+function cerrar_sesion() {
   window.location.href = "./cerrar_sesion.php";
 }
 document.querySelector(".logout-btn-exp").addEventListener("click", cerrar_sesion);
@@ -16,11 +16,10 @@ function BarraFija() {
   })
 };
 
-
-document.querySelector(".forgotpassw").addEventListener("click", function(){
-  document.getElementsByClassName("container-login").style.display = "none";
-  document.getElementsByClassName("recordar-passw").style.display = "block";
-});
+function forgotpassw() {
+  document.querySelector(".container-login").style.display = "none";
+  document.querySelector(".recordar-passw").style.display = "block";
+};
 
 
 
@@ -29,13 +28,13 @@ function darkmode(iconID) {
   var r = document.querySelector(':root');
   var element = document.body;
   element.classList.toggle("dark-mode");
-  
+
   if (document.getElementById(iconID).className == "fa-solid fa-moon") {
     setTimeout(() => {
-      
+
     }, 900);
     document.getElementById(iconID).className = "fa-solid fa-sun";
-    document.getElementById("logonavbar").src="./img/logos/logo_uem_claro.png";
+    document.getElementById("logonavbar").src = "./img/logos/logo_uem_claro.png";
     //dicionario de colores cambiado a darkmode
     r.style.setProperty('--footer-color', '#121212');
     r.style.setProperty('--header-color', '#121212');
@@ -46,13 +45,13 @@ function darkmode(iconID) {
     r.style.setProperty('--dark-color', '#121212');
     r.style.setProperty('--fondo-container-apuntame', '#121212');
     document.getElementById("botonDarkMode").firstChild.src = "images/darkMode0.png";
-  
+
   } else {
     setTimeout(() => {
-      
+
     }, 900);
     document.getElementById(iconID).className = "fa-solid fa-moon";
-    document.getElementById("logonavbar").src="./img/logos/logo_uem_oscuro.png";
+    document.getElementById("logonavbar").src = "./img/logos/logo_uem_oscuro.png";
     //dicionario de colores cambiado a light mode
     r.style.setProperty('--footer-color', 'white');
     r.style.setProperty('--header-color', 'white');
@@ -66,10 +65,10 @@ function darkmode(iconID) {
 };
 
 // FUNCION PARA OCULTAR EL BOTON DE LOGIN Y MOSTRAR EL AVATAR DE USUARIO
-function usuarioLogueado(){
+function usuarioLogueado() {
   // Ocultamos el botón de inicio de sesión
   buttonlogin.style.display = 'none';
-      
+
   // Mostramos el avatar del usuario
   avatar.style.display = 'flex';
 
@@ -99,21 +98,21 @@ window.addEventListener('load', () => {
   }
   // Si el usuario ha iniciado sesión
   if (loggedIn) {
-  // Ocultamos el botón de inicio de sesión
-  buttonlogin.style.display = 'none';
-      
-  // Mostramos el avatar del usuario
-  avatar.style.display = 'block';
+    // Ocultamos el botón de inicio de sesión
+    buttonlogin.style.display = 'none';
 
-  // Cuando se haga clic en el avatar
-  avatar.addEventListener('click', () => {
-    // Redirigimos al usuario a su perfil
-    window.location.replace('profile.php');
-    // show the user's wallet address
-    showUserWalletAddress();
-    // get the user's wallet balance
-    getWalletBalance();
-  });
+    // Mostramos el avatar del usuario
+    avatar.style.display = 'block';
+
+    // Cuando se haga clic en el avatar
+    avatar.addEventListener('click', () => {
+      // Redirigimos al usuario a su perfil
+      window.location.replace('profile.php');
+      // show the user's wallet address
+      showUserWalletAddress();
+      // get the user's wallet balance
+      getWalletBalance();
+    });
   }
 });
 
@@ -139,8 +138,8 @@ const loginWithMetamask = async () => {
 
       // 4. store the user's wallet address in local storage
       window.localStorage.setItem("userWalletAddress", selectedAccount);
-      
-      
+
+
       // Guardamos una clave en el almacenamiento local para indicar que el usuario ha iniciado sesión
       loggedIn = true;
       localStorage.setItem('loggedIn', true);
@@ -188,7 +187,7 @@ const showUserDashboard = async () => {
   //MOSTRAMOS AVATAR
   avatar.style.display = "block";
 
-  
+
   // change the page title
   //document.title = "Web3 Dashboard 🤝";
 
@@ -215,7 +214,7 @@ const logout = () => {
 
   loggedIn = false;
   window.localStorage.removeItem("loggedIn");
-  
+
   window.location.href = "./index.php";
 };
 

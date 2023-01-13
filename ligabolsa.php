@@ -84,7 +84,7 @@ session_start();
     <footer>
         <div class="footer">
             <div class="social-media">
-                <button><a href=""><i class="fa-brands fa-twitter"></i></a></button>
+                <button><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></button>
                 <button><a href="https://www.instagram.com/criptoclubuem/"><i class="fa-brands fa-instagram"></i></a></button>
                 <button><a href="https://www.linkedin.com/company/criptoclub/"><i
                             class="fa-brands fa-linkedin"></i></a></button>
