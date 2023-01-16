@@ -124,6 +124,7 @@ if (isset($_SESSION['numexpediente'])) {
                                     ?>
                             </table>
                         </div>
+                        <a href="https://discord.gg/bmRN66JJhm"><input class ="button" type="button" value="Conectarme al Discord"></a>
                         <div class="logout">
                             <button class="logout-btn-exp">Cerrar Sesión</button>
                             <button class="logout-btn">🔐 Log out</button>
