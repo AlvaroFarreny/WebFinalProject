@@ -1,5 +1,5 @@
 <p align="center">
- <img src="https://imgur.com/a/KB6WwUA.png" alt="drawing" width="400"/>
+ <img src="https://i.imgur.com/z8M97h8.png" alt="drawing" width="400"/>
 </p>
 
 # WebFinalProject
