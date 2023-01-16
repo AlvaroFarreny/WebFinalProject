@@ -207,7 +207,7 @@ footer {
   letter-spacing: 1.4px;
 }
 
-.dashboard-section{
+.dashboard-section {
   display: none;
 }
 
@@ -253,7 +253,7 @@ table th {
   table caption {
     font-size: 1.3em;
   }
-  
+
   table thead {
     border: none;
     clip: rect(0 0 0 0);
@@ -264,20 +264,20 @@ table th {
     position: absolute;
     width: 1px;
   }
-  
+
   table tr {
     border-bottom: 3px solid #ddd;
     display: block;
     margin-bottom: .625em;
   }
-  
+
   table td {
     border-bottom: 1px solid #ddd;
     display: block;
     font-size: .8em;
     text-align: right;
   }
-  
+
   table td::before {
     /*
     * aria-label has no advantage, it won't be read inside a table
@@ -288,21 +288,20 @@ table th {
     font-weight: bold;
     text-transform: uppercase;
   }
-  
+
   table td:last-child {
     border-bottom: 0;
   }
 }
 
-@media (max-width: 1200px){
-  .section__profile{
+@media (max-width: 1200px) {
+  .section__profile {
     height: 1200px;
   }
-}  
+}
 
-@media (max-width: 600px){
-  .section__profile{
+@media (max-width: 600px) {
+  .section__profile {
     height: 1450px;
   }
-}  
-
+}

@@ -1,3 +1,8 @@
+:root {
+  --degradado-botones: linear-gradient(to right, #ee8f00 0%, #ff531a 100%);
+  --degradado-botones-hover: linear-gradient(to left, #ee8f00 0%, #ff531a 100%);
+}
+
 /* Proyecto Bit2me */
 .inicioBit2me {
   background-color: #044e97;
@@ -102,8 +107,8 @@
 
 /* Proyecto AntonioNTFs */
 .inicioFunda {
-  background-color: #f2994a ;
-  background-image: linear-gradient(to right, #f2994a, #f2c94c); 
+  background-color: #f2994a;
+  background-image: linear-gradient(to right, #f2994a, #f2c94c);
   background-position: left center;
   background-repeat: no-repeat;
   border-width: 0px 0px 0px 0px;
@@ -145,6 +150,24 @@
   width: 70%;
 }
 
-.social-media i{
+.social-media i {
   color: black;
+}
+
+input {
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 50px;
+  margin-top: 10px;
+  background: var(--degradado-botones);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+input:hover {
+  background: var(--degradado-botones-hover);
+  letter-spacing: 1px;
 }

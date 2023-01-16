@@ -20,7 +20,8 @@ if (isset($_SESSION['numexpediente'])) {
 		);
 	}
 
-	function find_user_by_username($numexpediente, $connection){
+	function find_user_by_username($numexpediente, $connection)
+	{
 		$safe_username = mysqli_real_escape_string($connection, $numexpediente);
 		$query = "SELECT num_expediente ";
 		$query .= "FROM usuario ";
@@ -38,7 +39,8 @@ if (isset($_SESSION['numexpediente'])) {
 		}
 	}
 
-	function attempt_login($numexpediente, $connection){
+	function attempt_login($numexpediente, $connection)
+	{
 		$user = find_user_by_username($numexpediente, $connection);
 		if ($user) {
 			//user encontrado
@@ -51,49 +53,49 @@ if (isset($_SESSION['numexpediente'])) {
 	}
 
 	if (isset($_POST['nombre'])) {
-		
+
 		$nombre = $_POST["nombre"];
 	}
 	if (isset($_POST['apellidos'])) {
-		
+
 		$apellidos = $_POST["apellidos"];
 	}
 	if (isset($_POST['numexpediente'])) {
-		
+
 		$numexpediente = $_POST["numexpediente"];
 		$pattern = "/^[0-9]{8}$/";
 		if (preg_match($pattern, $numexpediente)) {
 			// El número de expediente es válido
-		}else{
+		} else {
 			// El número de expediente no es válido
-			echo'<script type="text/javascript">
+			echo '<script type="text/javascript">
         			alert("El número de expediente no es válido, por favor ingresa un numero de 8 digitos.");
 					window.location.href="login.php#register";
         		</script>';
 		}
 	}
 	if (isset($_POST['email'])) {
-		
+
 		$email = $_POST["email"];
 		if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
-			
-		}else{
+
+		} else {
 			// La dirección de correo electrónico no es válida, cumple con los estandares, como por ejemplo que tenga un arroba y un dominio válido.
-			echo'<script type="text/javascript">
+			echo '<script type="text/javascript">
         			alert("La dirección de correo electrónico no es válida, no cumple con los estándares.");
 					window.location.href="login.php#register";
         		</script>';
 		}
 	}
 	if (isset($_POST['password'])) {
-		
+
 		$password = $_POST["password"];
 	}
 
 	$found_user = attempt_login($numexpediente, $connection);
 	$tablename = "usuario";
 	if ($found_user) {
-		echo'<script type="text/javascript">
+		echo '<script type="text/javascript">
         			alert("El numero de expediente que has introducido ya existe. Si crees que es un fallo contacta con algun organizador del club.");
 					window.location.href="login.php";
         		</script>';

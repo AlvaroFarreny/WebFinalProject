@@ -3,6 +3,7 @@
 <?php
 session_start();
 ?>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -28,7 +29,8 @@ session_start();
                         <li><a href="#sobreNosotros">Nosotros</a></li>
                         <li><a href="#proyectos">Proyectos</a></li>
                         <li><a href="./login.php" id="buttonlogin">Login</a></li>
-                        <li class="perfil" id="avatar"><a href="./profile.php"><img src="img/user.png" style="height: 40px;"></a>Profile
+                        <li class="perfil" id="avatar"><a href="./profile.php"><img src="img/user.png"
+                                    style="height: 40px;"></a>Profile
                         </li>
                     </ul>
                 </nav>
@@ -214,7 +216,7 @@ session_start();
             leermasdisplay2.style.display = "block"
             var leermasdisplay3 = document.getElementById("leermas3");
             leermasdisplay3.style.display = "block"
-            
+
         </script>
         <?php
     }

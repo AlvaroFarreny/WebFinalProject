@@ -1,5 +1,5 @@
 <body style="background: linear-gradient(to right, #C02626 0%, rgb(118, 0, 0) 100%);">
-	
+
 </body>
 <?php
 session_start();
@@ -73,17 +73,17 @@ if (isset($_SESSION['numexpediente'])) {
 			$_SESSION["numexpediente"] = $_POST['numexpediente'];
 			header("Location: " . "./index.php");
 		} else {
-			echo'<script type="text/javascript">
+			echo '<script type="text/javascript">
         			alert("La contraseña no es válida");
 					window.location.href="login.php";
 					
         		</script>';
-				
+
 		}
 
 
 	} else {
-		echo'<script type="text/javascript">
+		echo '<script type="text/javascript">
         		alert("El usuario no es válido");
 				window.location.href="login.php";
         	</script>';

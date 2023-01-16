@@ -67,12 +67,11 @@ if (isset($_SESSION['numexpediente'])) {
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><button><i id="icon1" onclick="darkmode('icon1')" class="fa-solid fa-moon"></i></button>
-                        </li>
                         <li><a href="./index.php#inicio">Inicio</a></li>
                         <li><a href="./index.php#sobreNosotros">Nosotros</a></li>
                         <li><a href="./index.php#proyectos">Proyectos</a></li>
-                        <li class="perfil" id="avatar"><a href=""><img src="img/user.png" style="height: 40px;"></a>P</li>
+                        <li class="perfil" id="avatar"><a href=""><img src="img/user.png" style="height: 40px;"></a>P
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -99,32 +98,33 @@ if (isset($_SESSION['numexpediente'])) {
                         </div>
                         <h3>Próximas reuniones</h3>
                         <div class="container_calendar" style="overflow-x:auto;">
-                                <table class="tabla">
-                                    <tr>
-                                        <th>Fecha</th>
-                                        <th>Aula</th>
-                                        <th>Asunto</th>
-                                        <th>Ponente</th>
-                                    </tr>
-                                    <?php
-                                    $result = $_SESSION['result'];
-                                    if ($result->num_rows > 0) {
-                                        while ($row = $result->fetch_assoc()) {
-                                            echo
-                                                "<tr>
+                            <table class="tabla">
+                                <tr>
+                                    <th>Fecha</th>
+                                    <th>Aula</th>
+                                    <th>Asunto</th>
+                                    <th>Ponente</th>
+                                </tr>
+                                <?php
+                                $result = $_SESSION['result'];
+                                if ($result->num_rows > 0) {
+                                    while ($row = $result->fetch_assoc()) {
+                                        echo
+                                            "<tr>
                                         <td>" . $row["fecha_hora"] . "</td>
                                         <td>" . $row["aula"] . "</td>
                                         <td>" . $row["asunto"] . "</td>
                                         <td>" . $row["ponente"] . "</td>
                                     </tr>";
-                                        }
-                                    } else {
-                                        echo "0 results";
                                     }
-                                    ?>
+                                } else {
+                                    echo "0 results";
+                                }
+                                ?>
                             </table>
                         </div>
-                        <a href="https://discord.gg/bmRN66JJhm"><input class ="button" type="button" value="Conectarme al Discord"></a>
+                        <a href="https://discord.gg/bmRN66JJhm"><input class="button" type="button"
+                                value="Conectarme al Discord"></a>
                         <div class="logout">
                             <button class="logout-btn-exp">Cerrar Sesión</button>
                             <button class="logout-btn">🔐 Log out</button>

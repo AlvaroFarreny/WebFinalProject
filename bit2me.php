@@ -3,6 +3,7 @@
 <?php
 session_start();
 ?>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -13,6 +14,7 @@ session_start();
     <script src='main.js'></script>
     <link rel="shortcut icon" href="img/logos/favicon-32x32.png">
 </head>
+
 <body>
     <header class="header">
         <div class="container__menu">
@@ -27,7 +29,8 @@ session_start();
                         <li><a href="./index.php#sobreNosotros">Nosotros</a></li>
                         <li><a href="./index.php#proyectos">Proyectos</a></li>
                         <li><a href="./login.php" id="buttonlogin">Login</a></li>
-                        <li class="perfil" id="avatar"><a href="./profile.php"><img src="img/user.png" style="height: 40px;"></a>Profile</li>
+                        <li class="perfil" id="avatar"><a href="./profile.php"><img src="img/user.png"
+                                    style="height: 40px;"></a>Profile</li>
                     </ul>
                 </nav>
             </div>
@@ -59,15 +62,21 @@ session_start();
     <section class="introduccion">
         <div>
             <h3 class="titulos-h3"><strong>¿En qué consiste?</strong></h3>
-            <p class="texto">En este viaje hacia el conocimiento de la tecnología blockchain, durante este semestre explorarás desde cero las diferentes aplicaciones que van desde el surgimiento de las criptomonedas y la economía de los tokens, los aspectos regulatorios que las envuelven hasta la aplicación en otros ámbitos de la industria, la empresa y la consultoría.</p>
+            <p class="texto">En este viaje hacia el conocimiento de la tecnología blockchain, durante este semestre
+                explorarás desde cero las diferentes aplicaciones que van desde el surgimiento de las criptomonedas y la
+                economía de los tokens, los aspectos regulatorios que las envuelven hasta la aplicación en otros ámbitos
+                de la industria, la empresa y la consultoría.</p>
         </div>
     </section>
     <section class="desarrollo">
         <div>
             <h3 class="titulos-h3"><strong>¿Qué vamos a hacer</strong></h3>
-            <p class="texto">MISIÓN: Aprender todos los conceptos claves para iniciarte de forma segura en el entorno Blockchain. Visita a tu ritmo los contenidos que se indiquen en tu hoja de misión antes de la fecha de llegada al Checkpoint.
+            <p class="texto">MISIÓN: Aprender todos los conceptos claves para iniciarte de forma segura en el entorno
+                Blockchain. Visita a tu ritmo los contenidos que se indiquen en tu hoja de misión antes de la fecha de
+                llegada al Checkpoint.
 
-Tras completar tu itinerario formativo tendrás todos los conocimientos necesarios para enfrentarte al CryptoChallenge, del que podrás obtener premios y recompensas por tus ideas.</p>
+                Tras completar tu itinerario formativo tendrás todos los conocimientos necesarios para enfrentarte al
+                CryptoChallenge, del que podrás obtener premios y recompensas por tus ideas.</p>
         </div>
     </section>
     <section class="roadmap">
@@ -76,12 +85,19 @@ Tras completar tu itinerario formativo tendrás todos los conocimientos necesari
             <img src="img/bit2me/roadmapBit2me.png" alt="roadmap_bit2me_example" loading="lazy">
         </div>
     </section>
+    <center>
+        <form action="registro_proyectos_PROCESS.php" method="post">
+            <input type="submit" name="apuntarse_bit2me" value="Registrarme en el Club">
+        </form>
+    </center>
+
     <footer>
         <footer>
             <div class="footer">
                 <div class="social-media">
                     <button><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></button>
-                    <button><a href="https://www.instagram.com/criptoclubuem/"><i class="fa-brands fa-instagram"></i></a></button>
+                    <button><a href="https://www.instagram.com/criptoclubuem/"><i
+                                class="fa-brands fa-instagram"></i></a></button>
                     <button><a href="https://www.linkedin.com/company/criptoclub/"><i
                                 class="fa-brands fa-linkedin"></i></a></button>
                 </div>
@@ -91,4 +107,5 @@ Tras completar tu itinerario formativo tendrás todos los conocimientos necesari
             </div>
         </footer>
 </body>
+
 </html>

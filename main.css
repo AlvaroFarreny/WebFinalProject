@@ -5,10 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 :root {
-  --p-color:rgb(36, 36, 36);
-  --h1-color:rgb(36, 36, 36);
-  --h2-color:rgb(36, 36, 36);
-  --h3-color:#C02626;
+  --p-color: rgb(36, 36, 36);
+  --h1-color: rgb(36, 36, 36);
+  --h2-color: rgb(36, 36, 36);
+  --h3-color: #C02626;
   --footer-color: white;
   --header-color: white;
   --gris-color: rgb(245, 245, 245);
@@ -26,10 +26,6 @@
   --mostrar-leermas: none;
 }
 
-:dicionario {
-  -color-pepitogrillo: #213;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +33,7 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-p{
+p {
   color: var(--p-color);
 }
 
@@ -528,12 +524,12 @@ span.psw {
   padding: 25px 30px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
-  
+
 }
 
 .container_apuntame form .title {
   font-size: 30px;
-  color:var(--p-color);
+  color: var(--p-color);
   font-weight: 600;
   margin: 20px 0 10px 0;
   position: relative;
@@ -621,7 +617,7 @@ span.psw {
   text-align: center;
 }
 
-#bit2me{
+#bit2me {
   padding-bottom: 20px;
 }
 
@@ -683,63 +679,71 @@ footer {
   color: var(--color-hover-enlaces);
   letter-spacing: 1.4px;
 }
-#sabermas1{
+
+#sabermas1 {
   display: var(--mostrar-sabermas);
 }
-#leermas1{
+
+#leermas1 {
   display: var(--mostrar-leermas);
 }
-#sabermas2{
+
+#sabermas2 {
   display: var(--mostrar-sabermas);
 }
-#leermas2{
+
+#leermas2 {
   display: var(--mostrar-leermas);
 }
-#sabermas3{
+
+#sabermas3 {
   display: var(--mostrar-sabermas);
 }
-#leermas3{
+
+#leermas3 {
   display: var(--mostrar-leermas);
 }
 
 @media (max-width: 1000px) {
-  .svg{
-    display:none;
+  .svg {
+    display: none;
   }
-  .container__cover{
-    background-image:none;
-    display:flex;
+
+  .container__cover {
+    background-image: none;
+    display: flex;
     background: var(--degradado-rojo);
   }
 
   .container__cover .text h1 {
-    color:white;
+    color: white;
   }
 
   .container__cover .text p {
-    color:white;
+    color: white;
   }
 
   .container__cover .text input {
     align-self: center;
   }
 
-  .columnas-nosotros{
-    display:block;
+  .columnas-nosotros {
+    display: block;
   }
 
-  .item-nosotros{
+  .item-nosotros {
     padding: 10px;
   }
 
-  .item{
+  .item {
     display: flex;
     justify-content: center;
     margin: 0px;
   }
-  .item .parteimagen{
+
+  .item .parteimagen {
     display: none;
-  
+
   }
 
 }

@@ -60,17 +60,29 @@ session_start();
     <section class="introduccion">
         <div>
             <h3 class="titulos-h3"><strong>¿Quiénes somos?</strong></h3>
-            <p class="texto">Creemos en las personas y en la humanidad, por eso nuestra principal misión es promover al ser humano, generando, promocionando y desarrollando proyectos centrados en las personas, su expresión y reconocimiento. Promovemos la convivencia, tolerancia y reivindicación de las personas y de la sociedad.
-Queremos contribuir al desarrollo de una conciencia ética en el ser humano y en la sociedad, estimulando la curiosidad y acelerando el descubrimiento. Promovemos la expresión del arte y la cultura en diferentes ámbitos y creamos alianzas y unión entre la cultura y el mundo.
-Formulamos y ejecutamos proyectos de cooperación internacional que promuevan nuevas estrategias e intercambio en materia de proyectos innovadores y creativos.</p>
+            <p class="texto">Creemos en las personas y en la humanidad, por eso nuestra principal misión es promover al
+                ser humano, generando, promocionando y desarrollando proyectos centrados en las personas, su expresión y
+                reconocimiento. Promovemos la convivencia, tolerancia y reivindicación de las personas y de la sociedad.
+                Queremos contribuir al desarrollo de una conciencia ética en el ser humano y en la sociedad, estimulando
+                la curiosidad y acelerando el descubrimiento. Promovemos la expresión del arte y la cultura en
+                diferentes ámbitos y creamos alianzas y unión entre la cultura y el mundo.
+                Formulamos y ejecutamos proyectos de cooperación internacional que promuevan nuevas estrategias e
+                intercambio en materia de proyectos innovadores y creativos.</p>
         </div>
     </section>
     <section class="desarrollo">
         <div>
             <h3 class="titulos-h3"><strong>¿Qué vamos a hacer?</strong></h3>
-            <p class="texto">Se realizará una creación de una colección única de NFT's y su posterior venta y comercialización. Con la colaboración de los estudiantes del CriptoClub de la Universidad Europea.</p>
+            <p class="texto">Se realizará una creación de una colección única de NFT's y su posterior venta y
+                comercialización. Con la colaboración de los estudiantes del CriptoClub de la Universidad Europea.</p>
         </div>
     </section>
+    <center>
+        <form action="registro_proyectos_PROCESS.php" method="post">
+            <input type="submit" name="apuntarse_fundacion_camaro" value="Registrarme en el Club">
+        </form>
+    </center>
+
     <footer>
         <div class="footer">
             <div class="social-media">
