@@ -58,20 +58,16 @@ session_start();
     </div>
     <section class="introduccion">
         <div>
-            <h3 class="titulos-h3"><strong>¿En qué consiste</strong></h3>
-            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ullamcorper laoreet velit at ultrices. Duis quis eleifend mauris. Vivamus finibus, risus sit amet dapibus sagittis, lacus magna sodales neque, eu fermentum nunc dui eu mi. Praesent quis malesuada purus. In tortor erat, iaculis ac mi nec, placerat sagittis ipsum. Proin id tincidunt risus, et suscipit enim. Phasellus euismod vel enim in finibus. Phasellus in leo at urna tincidunt interdum placerat a sem. Vestibulum ut commodo ipsum.
-
-                Proin commodo tristique nibh nec mollis. Proin viverra neque vitae nisl condimentum, eu iaculis eros commodo. Maecenas consequat non augue id commodo. Integer facilisis, nisi nec accumsan vestibulum, orci erat bibendum ligula, efficitur mattis justo orci sed tellus. Cras nibh felis, consequat quis posuere non, tincidunt a augue. Nulla diam ante, ornare non cursus et, semper eget ipsum. Morbi ornare nunc sed augue tincidunt, quis consequat massa iaculis. Duis non tempor ipsum. Vivamus aliquet bibendum orci, in placerat odio luctus eget. Cras arcu eros, gravida non leo quis, ultricies mattis ante. Nulla venenatis leo eu magna varius, eget ultrices mauris aliquam.</p>
+            <h3 class="titulos-h3"><strong>¿En qué consiste?</strong></h3>
+            <p class="texto">En este viaje hacia el conocimiento de la tecnología blockchain, durante este semestre explorarás desde cero las diferentes aplicaciones que van desde el surgimiento de las criptomonedas y la economía de los tokens, los aspectos regulatorios que las envuelven hasta la aplicación en otros ámbitos de la industria, la empresa y la consultoría.</p>
         </div>
     </section>
     <section class="desarrollo">
         <div>
             <h3 class="titulos-h3"><strong>¿Qué vamos a hacer</strong></h3>
-            <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tincidunt est in semper ullamcorper. Maecenas nec accumsan purus. Nam accumsan quam a porta convallis. In posuere lorem sed massa molestie, sit amet mollis urna aliquam. Proin in elementum erat, in volutpat diam. Morbi ipsum lacus, sagittis eget viverra eget, cursus at lectus. Suspendisse pellentesque ligula nunc, nec suscipit turpis congue nec. Quisque aliquet luctus metus id pretium. Sed tempus viverra tristique. Suspendisse commodo lorem scelerisque, congue augue id, auctor tortor.
+            <p class="texto">MISIÓN: Aprender todos los conceptos claves para iniciarte de forma segura en el entorno Blockchain. Visita a tu ritmo los contenidos que se indiquen en tu hoja de misión antes de la fecha de llegada al Checkpoint.
 
-                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque tincidunt elit quis porta bibendum. In consequat, metus et fermentum feugiat, odio felis vulputate felis, sed semper magna nisi at erat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed tincidunt diam purus, nec convallis velit gravida sit amet. Phasellus bibendum ligula sapien, id convallis ipsum placerat vitae. Aliquam id mauris vel nisi lacinia sagittis. In lacinia dui dignissim, lacinia erat vitae, malesuada metus. Etiam ornare enim lectus. Suspendisse felis lacus, congue vel lobortis non, cursus dignissim metus.
-                
-                Curabitur ut rutrum dolor, in laoreet nibh. Duis non lectus libero. Ut eu mi dui. Aliquam sed pellentesque orci. Suspendisse eget dolor enim. Duis iaculis tellus in dignissim dignissim. Etiam viverra turpis vel leo imperdiet varius. Quisque pulvinar, odio id tempus semper, lectus arcu pulvinar ante, nec rhoncus sem magna a est. Pellentesque semper lobortis lectus, pretium rutrum nisl porta vel.</p>
+Tras completar tu itinerario formativo tendrás todos los conocimientos necesarios para enfrentarte al CryptoChallenge, del que podrás obtener premios y recompensas por tus ideas.</p>
         </div>
     </section>
     <section class="roadmap">
